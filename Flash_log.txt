@@ -1,0 +1,378 @@
+Microsoft Windows [版本 10.0.19045.5011]
+(c) Microsoft Corporation. 著作權所有，並保留一切權利。
+
+C:\Users\user\Downloads\flash\images>cd ..
+
+C:\Users\user\Downloads\flash>flash_all.bat
+
+C:\Users\user\Downloads\flash>fastboot  getvar product   2>&1  | findstr /r /c:"^product: *liuqin"   || echo Missmatching image and device
+product: liuqin
+
+C:\Users\user\Downloads\flash>fastboot  getvar product   2>&1  | findstr /r /c:"^product: *liuqin"   || exit /B 1
+product: liuqin
+
+C:\Users\user\Downloads\flash>if exist "C:\Users\user\Downloads\flash\images\anti_version.txt" (for /F "usebackq" %a in ("C:\Users\user\Downloads\flash\images\anti_version.txt") do (set CURRENT_ANTI_VER=%a ) )
+
+C:\Users\user\Downloads\flash>(set CURRENT_ANTI_VER=1 )
+
+C:\Users\user\Downloads\flash>if [1] EQU [] set CURRENT_ANTI_VER=0
+
+C:\Users\user\Downloads\flash>for /F "tokens=2 delims=: " %i in ('fastboot getvar anti 2>&1 | findstr /r /c:"anti:"') do (set version=%i )
+
+C:\Users\user\Downloads\flash>(set version=1 )
+
+C:\Users\user\Downloads\flash>if [1] EQU [] set version=0
+
+C:\Users\user\Downloads\flash>set anticheck="antirollback check pass"
+
+C:\Users\user\Downloads\flash>if 1 GTR 1 set anticheck="Current device antirollback version is greater than this pakcage"
+
+C:\Users\user\Downloads\flash>echo "antirollback check pass"   | findstr /r /c:"pass"   ||
+"antirollback check pass"
+
+C:\Users\user\Downloads\flash>fastboot  getvar crc   2>&1  | findstr /r /c:"^crc: 1"   && if 0 EQU 0 (
+fastboot  flash crclist C:\Users\user\Downloads\flash\images\crclist.txt   ||
+ fastboot  flash sparsecrclist C:\Users\user\Downloads\flash\images\sparsecrclist.txt   ||
+)
+crc: 1
+Warning: skip copying crclist image avb footer (crclist partition size: 0, crclist image size: 642).
+Sending 'crclist' (0 KB)                           OKAY [  0.002s]
+Writing 'crclist'                                  OKAY [  0.003s]
+Finished. Total time: 0.039s
+Warning: skip copying sparsecrclist image avb footer (sparsecrclist partition size: 0, sparsecrclist image size: 231).
+Sending 'sparsecrclist' (0 KB)                     OKAY [  0.001s]
+Writing 'sparsecrclist'                            OKAY [  0.001s]
+Finished. Total time: 0.042s
+
+C:\Users\user\Downloads\flash>fastboot  erase boot_ab   ||
+Erasing 'boot_ab'                                  (bootloader) Partition boot_a erase successfully
+(bootloader) Partition boot_b erase successfully
+OKAY [  0.040s]
+Finished. Total time: 0.052s
+
+C:\Users\user\Downloads\flash>fastboot  flash abl_ab C:\Users\user\Downloads\flash\images/abl.elf   ||
+Warning: skip copying abl_ab image avb footer (abl_ab partition size: 0, abl_ab image size: 204120).
+Sending 'abl_ab' (199 KB)                          OKAY [  0.006s]
+Writing 'abl_ab'                                   (bootloader) Partition abl_a flashed successfully
+(bootloader) Partition abl_b flashed successfully
+OKAY [  0.016s]
+Finished. Total time: 0.070s
+
+C:\Users\user\Downloads\flash>fastboot  flash xbl_ab C:\Users\user\Downloads\flash\images/xbl_s.melf   ||
+Warning: skip copying xbl_ab image avb footer (xbl_ab partition size: 0, xbl_ab image size: 1088324).
+Sending 'xbl_ab' (1062 KB)                         OKAY [  0.027s]
+Writing 'xbl_ab'                                   (bootloader) Partition xbl_a flashed successfully
+(bootloader) Partition xbl_b flashed successfully
+OKAY [  0.051s]
+Finished. Total time: 0.121s
+
+C:\Users\user\Downloads\flash>fastboot  flash xbl_config_ab C:\Users\user\Downloads\flash\images/xbl_config.elf   ||
+Warning: skip copying xbl_config_ab image avb footer (xbl_config_ab partition size: 0, xbl_config_ab image size: 114200).
+Sending 'xbl_config_ab' (111 KB)                   OKAY [  0.004s]
+Writing 'xbl_config_ab'                            (bootloader) Partition xbl_config_a flashed successfully
+(bootloader) Partition xbl_config_b flashed successfully
+OKAY [  0.014s]
+Finished. Total time: 0.066s
+
+C:\Users\user\Downloads\flash>fastboot  flash shrm_ab C:\Users\user\Downloads\flash\images/shrm.elf   ||
+Warning: skip copying shrm_ab image avb footer (shrm_ab partition size: 0, shrm_ab image size: 64288).
+Sending 'shrm_ab' (62 KB)                          OKAY [  0.003s]
+Writing 'shrm_ab'                                  (bootloader) Partition shrm_a flashed successfully
+(bootloader) Partition shrm_b flashed successfully
+OKAY [  0.009s]
+Finished. Total time: 0.053s
+
+C:\Users\user\Downloads\flash>fastboot  flash aop_ab C:\Users\user\Downloads\flash\images/aop.mbn   ||
+Warning: skip copying aop_ab image avb footer (aop_ab partition size: 0, aop_ab image size: 236512).
+Sending 'aop_ab' (230 KB)                          OKAY [  0.006s]
+Writing 'aop_ab'                                   (bootloader) Partition aop_a flashed successfully
+(bootloader) Partition aop_b flashed successfully
+OKAY [  0.017s]
+Finished. Total time: 0.065s
+
+C:\Users\user\Downloads\flash>fastboot  flash aop_config_ab C:\Users\user\Downloads\flash\images/aop_devcfg.mbn   ||
+Warning: skip copying aop_config_ab image avb footer (aop_config_ab partition size: 0, aop_config_ab image size: 15752).
+Sending 'aop_config_ab' (15 KB)                    OKAY [  0.002s]
+Writing 'aop_config_ab'                            (bootloader) Partition aop_config_a flashed successfully
+(bootloader) Partition aop_config_b flashed successfully
+OKAY [  0.007s]
+Finished. Total time: 0.053s
+
+C:\Users\user\Downloads\flash>fastboot  flash tz_ab C:\Users\user\Downloads\flash\images/tz.mbn   ||
+Warning: skip copying tz_ab image avb footer (tz_ab partition size: 0, tz_ab image size: 3797184).
+Sending 'tz_ab' (3708 KB)                          OKAY [  0.081s]
+Writing 'tz_ab'                                    (bootloader) Partition tz_a flashed successfully
+(bootloader) Partition tz_b flashed successfully
+OKAY [  0.164s]
+Finished. Total time: 0.331s
+
+C:\Users\user\Downloads\flash>fastboot  flash devcfg_ab C:\Users\user\Downloads\flash\images/devcfg.mbn   ||
+Warning: skip copying devcfg_ab image avb footer (devcfg_ab partition size: 0, devcfg_ab image size: 56712).
+Sending 'devcfg_ab' (55 KB)                        OKAY [  0.002s]
+Writing 'devcfg_ab'                                (bootloader) Partition devcfg_a flashed successfully
+(bootloader) Partition devcfg_b flashed successfully
+OKAY [  0.009s]
+Finished. Total time: 0.055s
+
+C:\Users\user\Downloads\flash>fastboot  flash featenabler_ab C:\Users\user\Downloads\flash\images/featenabler.mbn   ||
+Warning: skip copying featenabler_ab image avb footer (featenabler_ab partition size: 0, featenabler_ab image size: 92044).
+Sending 'featenabler_ab' (89 KB)                   OKAY [  0.003s]
+Writing 'featenabler_ab'                           (bootloader) Partition featenabler_a flashed successfully
+(bootloader) Partition featenabler_b flashed successfully
+OKAY [  0.013s]
+Finished. Total time: 0.063s
+
+C:\Users\user\Downloads\flash>fastboot  flash hyp_ab C:\Users\user\Downloads\flash\images/hypvmperformance.mbn   ||
+Warning: skip copying hyp_ab image avb footer (hyp_ab partition size: 0, hyp_ab image size: 1256416).
+Sending 'hyp_ab' (1226 KB)                         OKAY [  0.028s]
+Writing 'hyp_ab'                                   (bootloader) Partition hyp_a flashed successfully
+(bootloader) Partition hyp_b flashed successfully
+OKAY [  0.058s]
+Finished. Total time: 0.137s
+
+C:\Users\user\Downloads\flash>fastboot  flash uefi_ab C:\Users\user\Downloads\flash\images/uefi.elf   ||
+Warning: skip copying uefi_ab image avb footer (uefi_ab partition size: 0, uefi_ab image size: 2760024).
+Sending 'uefi_ab' (2695 KB)                        OKAY [  0.059s]
+Writing 'uefi_ab'                                  (bootloader) Partition uefi_a flashed successfully
+(bootloader) Partition uefi_b flashed successfully
+OKAY [  0.122s]
+Finished. Total time: 0.240s
+
+C:\Users\user\Downloads\flash>fastboot  flash uefisecapp_ab C:\Users\user\Downloads\flash\images/uefi_sec.mbn   ||
+Warning: skip copying uefisecapp_ab image avb footer (uefisecapp_ab partition size: 0, uefisecapp_ab image size: 171640).
+Sending 'uefisecapp_ab' (167 KB)                   OKAY [  0.005s]
+Writing 'uefisecapp_ab'                            (bootloader) Partition uefisecapp_a flashed successfully
+(bootloader) Partition uefisecapp_b flashed successfully
+OKAY [  0.017s]
+Finished. Total time: 0.072s
+
+C:\Users\user\Downloads\flash>fastboot  flash modem_ab C:\Users\user\Downloads\flash\images/NON-HLOS.bin   ||
+Warning: skip copying modem_ab image avb footer (modem_ab partition size: 0, modem_ab image size: 112971776).
+Sending 'modem_ab' (110324 KB)                     OKAY [  2.676s]
+Writing 'modem_ab'                                 (bootloader) Partition modem_a flashed successfully
+(bootloader) Partition modem_b flashed successfully
+OKAY [  4.725s]
+Finished. Total time: 7.459s
+
+C:\Users\user\Downloads\flash>fastboot  flash bluetooth_ab C:\Users\user\Downloads\flash\images/BTFM.bin   ||
+Warning: skip copying bluetooth_ab image avb footer (bluetooth_ab partition size: 0, bluetooth_ab image size: 1830912).
+Sending 'bluetooth_ab' (1788 KB)                   OKAY [  0.044s]
+Writing 'bluetooth_ab'                             (bootloader) Partition bluetooth_a flashed successfully
+(bootloader) Partition bluetooth_b flashed successfully
+OKAY [  0.083s]
+Finished. Total time: 0.175s
+
+C:\Users\user\Downloads\flash>fastboot  flash dsp_ab C:\Users\user\Downloads\flash\images/dspso.bin   ||
+Warning: skip copying dsp_ab image avb footer (dsp_ab partition size: 0, dsp_ab image size: 67108864).
+Sending 'dsp_ab' (65536 KB)                        OKAY [  1.580s]
+Writing 'dsp_ab'                                   (bootloader) Partition dsp_a flashed successfully
+(bootloader) Partition dsp_b flashed successfully
+OKAY [  2.868s]
+Finished. Total time: 4.490s
+
+C:\Users\user\Downloads\flash>fastboot  flash keymaster_ab C:\Users\user\Downloads\flash\images/keymint.mbn   ||
+Warning: skip copying keymaster_ab image avb footer (keymaster_ab partition size: 0, keymaster_ab image size: 368248).
+Sending 'keymaster_ab' (359 KB)                    OKAY [  0.009s]
+Writing 'keymaster_ab'                             (bootloader) Partition keymaster_a flashed successfully
+(bootloader) Partition keymaster_b flashed successfully
+OKAY [  0.023s]
+Finished. Total time: 0.085s
+
+C:\Users\user\Downloads\flash>fastboot  flash qupfw_ab C:\Users\user\Downloads\flash\images/qupv3fw.elf   ||
+Warning: skip copying qupfw_ab image avb footer (qupfw_ab partition size: 0, qupfw_ab image size: 51132).
+Sending 'qupfw_ab' (49 KB)                         OKAY [  0.002s]
+Writing 'qupfw_ab'                                 (bootloader) Partition qupfw_a flashed successfully
+(bootloader) Partition qupfw_b flashed successfully
+OKAY [  0.009s]
+Finished. Total time: 0.053s
+
+C:\Users\user\Downloads\flash>fastboot  flash multiimgoem_ab C:\Users\user\Downloads\flash\images/multi_image.mbn   ||
+Warning: skip copying multiimgoem_ab image avb footer (multiimgoem_ab partition size: 0, multiimgoem_ab image size: 32768).
+Sending 'multiimgoem_ab' (32 KB)                   OKAY [  0.002s]
+Writing 'multiimgoem_ab'                           (bootloader) Partition multiimgoem_a flashed successfully
+(bootloader) Partition multiimgoem_b flashed successfully
+OKAY [  0.011s]
+Finished. Total time: 0.059s
+
+C:\Users\user\Downloads\flash>fastboot  flash multiimgqti_ab C:\Users\user\Downloads\flash\images/multi_image_qti.mbn   ||
+Warning: skip copying multiimgqti_ab image avb footer (multiimgqti_ab partition size: 0, multiimgqti_ab image size: 12088).
+Sending 'multiimgqti_ab' (11 KB)                   OKAY [  0.002s]
+Writing 'multiimgqti_ab'                           (bootloader) Partition multiimgqti_a flashed successfully
+(bootloader) Partition multiimgqti_b flashed successfully
+OKAY [  0.009s]
+Finished. Total time: 0.057s
+
+C:\Users\user\Downloads\flash>fastboot  flash cpucp_ab C:\Users\user\Downloads\flash\images/cpucp.elf   ||
+Warning: skip copying cpucp_ab image avb footer (cpucp_ab partition size: 0, cpucp_ab image size: 159744).
+Sending 'cpucp_ab' (156 KB)                        OKAY [  0.005s]
+Writing 'cpucp_ab'                                 (bootloader) Partition cpucp_a flashed successfully
+(bootloader) Partition cpucp_b flashed successfully
+OKAY [  0.015s]
+Finished. Total time: 0.068s
+
+C:\Users\user\Downloads\flash>fastboot  flash rtice C:\Users\user\Downloads\flash\images\rtice.mbn   ||
+Sending 'rtice' (240 KB)                           OKAY [  0.006s]
+Writing 'rtice'                                    OKAY [  0.013s]
+Finished. Total time: 0.057s
+
+C:\Users\user\Downloads\flash>fastboot  flash logfs C:\Users\user\Downloads\flash\images/logfs_ufs_8mb.bin   ||
+Sending 'logfs' (16 KB)                            OKAY [  0.002s]
+Writing 'logfs'                                    OKAY [  0.001s]
+Finished. Total time: 0.035s
+
+C:\Users\user\Downloads\flash>fastboot  flash rescue C:\Users\user\Downloads\flash\images/rescue.img   ||
+Warning: skip copying rescue image avb footer due to sparse image.
+Sending 'rescue' (40 KB)                           OKAY [  0.002s]
+Writing 'rescue'                                   OKAY [  0.003s]
+Finished. Total time: 0.038s
+
+C:\Users\user\Downloads\flash>fastboot  flash storsec C:\Users\user\Downloads\flash\images/storsec.mbn   ||
+Sending 'storsec' (31 KB)                          OKAY [  0.002s]
+Writing 'storsec'                                  OKAY [  0.003s]
+Finished. Total time: 0.036s
+
+C:\Users\user\Downloads\flash>fastboot  flash toolsfv C:\Users\user\Downloads\flash\images/tools.fv   ||
+Sending 'toolsfv' (384 KB)                         OKAY [  0.010s]
+Writing 'toolsfv'                                  OKAY [  0.003s]
+Finished. Total time: 0.049s
+
+C:\Users\user\Downloads\flash>fastboot  flash xbl_ramdump_ab C:\Users\user\Downloads\flash\images/XblRamdump.elf   ||
+Warning: skip copying xbl_ramdump_ab image avb footer (xbl_ramdump_ab partition size: 0, xbl_ramdump_ab image size: 851384).
+Sending 'xbl_ramdump_ab' (831 KB)                  OKAY [  0.019s]
+Writing 'xbl_ramdump_ab'                           (bootloader) Partition xbl_ramdump_a flashed successfully
+(bootloader) Partition xbl_ramdump_b flashed successfully
+OKAY [  0.013s]
+Finished. Total time: 0.092s
+
+C:\Users\user\Downloads\flash>fastboot  flash xbl_sc_test_mode C:\Users\user\Downloads\flash\images/xbl_sc_test_mode.bin   ||
+Sending 'xbl_sc_test_mode' (64 KB)                 OKAY [  0.003s]
+Writing 'xbl_sc_test_mode'                         OKAY [  0.003s]
+Finished. Total time: 0.046s
+
+C:\Users\user\Downloads\flash>fastboot  erase imagefv_ab   ||
+Erasing 'imagefv_ab'                               (bootloader) Partition imagefv_a erase successfully
+(bootloader) Partition imagefv_b erase successfully
+OKAY [  0.039s]
+Finished. Total time: 0.051s
+
+C:\Users\user\Downloads\flash>fastboot  flash imagefv_ab C:\Users\user\Downloads\flash\images/imagefv.elf   ||
+Warning: skip copying imagefv_ab image avb footer (imagefv_ab partition size: 0, imagefv_ab image size: 6298968).
+Sending 'imagefv_ab' (6151 KB)                     OKAY [  0.166s]
+Writing 'imagefv_ab'                               (bootloader) Partition imagefv_a flashed successfully
+(bootloader) Partition imagefv_b flashed successfully
+OKAY [  0.281s]
+Finished. Total time: 0.514s
+
+C:\Users\user\Downloads\flash>fastboot  flash super C:\Users\user\Downloads\flash\images/super.img   ||
+Sending sparse 'super' 1/9 (728944 KB)             OKAY [ 17.780s]
+Writing 'super'                                    OKAY [  0.004s]
+Sending sparse 'super' 2/9 (720896 KB)             OKAY [ 17.575s]
+Writing 'super'                                    OKAY [ 20.629s]
+Sending sparse 'super' 3/9 (720896 KB)             OKAY [ 17.600s]
+Writing 'super'                                    OKAY [ 19.592s]
+Sending sparse 'super' 4/9 (759728 KB)             OKAY [ 18.555s]
+Writing 'super'                                    OKAY [ 18.656s]
+Sending sparse 'super' 5/9 (736168 KB)             OKAY [ 17.957s]
+Writing 'super'                                    OKAY [ 20.446s]
+Sending sparse 'super' 6/9 (746976 KB)             OKAY [ 18.210s]
+Writing 'super'                                    OKAY [ 19.252s]
+Sending sparse 'super' 7/9 (745664 KB)             OKAY [ 18.351s]
+Writing 'super'                                    OKAY [ 19.411s]
+Sending sparse 'super' 8/9 (776236 KB)             OKAY [ 18.786s]
+Writing 'super'                                    OKAY [ 18.872s]
+Sending sparse 'super' 9/9 (308700 KB)             OKAY [  7.576s]
+Writing 'super'                                    OKAY [ 32.818s]
+Finished. Total time: 322.175s
+
+C:\Users\user\Downloads\flash>fastboot  flash vendor_boot_ab C:\Users\user\Downloads\flash\images/vendor_boot.img   ||
+Warning: skip copying vendor_boot_ab image avb footer (vendor_boot_ab partition size: 0, vendor_boot_ab image size: 100663296).
+Sending 'vendor_boot_ab' (98304 KB)                OKAY [  2.375s]
+Writing 'vendor_boot_ab'                           (bootloader) Partition vendor_boot_a flashed successfully
+(bootloader) Partition vendor_boot_b flashed successfully
+OKAY [ 17.160s]
+Finished. Total time: 20.531s
+
+C:\Users\user\Downloads\flash>fastboot  flash dtbo_ab C:\Users\user\Downloads\flash\images/dtbo.img   ||
+Warning: skip copying dtbo_ab image avb footer (dtbo_ab partition size: 0, dtbo_ab image size: 25165824).
+Sending 'dtbo_ab' (24576 KB)                       OKAY [  0.594s]
+Writing 'dtbo_ab'                                  (bootloader) Partition dtbo_a flashed successfully
+(bootloader) Partition dtbo_b flashed successfully
+OKAY [  1.063s]
+Finished. Total time: 1.702s
+
+C:\Users\user\Downloads\flash>fastboot  flash vbmeta_ab C:\Users\user\Downloads\flash\images/vbmeta.img   ||
+Warning: skip copying vbmeta_ab image avb footer (vbmeta_ab partition size: 0, vbmeta_ab image size: 8192).
+Sending 'vbmeta_ab' (8 KB)                         OKAY [  0.001s]
+Writing 'vbmeta_ab'                                (bootloader) Partition vbmeta_a flashed successfully
+(bootloader) Partition vbmeta_b flashed successfully
+OKAY [  0.007s]
+Finished. Total time: 0.052s
+
+C:\Users\user\Downloads\flash>fastboot  flash vbmeta_system_ab C:\Users\user\Downloads\flash\images/vbmeta_system.img   ||
+Warning: skip copying vbmeta_system_ab image avb footer (vbmeta_system_ab partition size: 0, vbmeta_system_ab image size: 4096).
+Sending 'vbmeta_system_ab' (4 KB)                  OKAY [  0.001s]
+Writing 'vbmeta_system_ab'                         (bootloader) Partition vbmeta_system_a flashed successfully
+(bootloader) Partition vbmeta_system_b flashed successfully
+OKAY [  0.006s]
+Finished. Total time: 0.049s
+
+C:\Users\user\Downloads\flash>fastboot  erase metadata   ||
+Erasing 'metadata'                                 OKAY [  0.024s]
+Finished. Total time: 0.036s
+
+C:\Users\user\Downloads\flash>fastboot  flash metadata C:\Users\user\Downloads\flash\images/metadata.img   ||
+Warning: skip copying metadata image avb footer due to sparse image.
+Sending 'metadata' (44 KB)                         OKAY [  0.002s]
+Writing 'metadata'                                 OKAY [  0.003s]
+Finished. Total time: 0.039s
+
+C:\Users\user\Downloads\flash>fastboot  flash userdata C:\Users\user\Downloads\flash\images/userdata.img   ||
+Warning: skip copying userdata image avb footer due to sparse image.
+Sending 'userdata' (3584 KB)                       OKAY [  0.087s]
+Writing 'userdata'                                 OKAY [  0.008s]
+Finished. Total time: 0.137s
+
+C:\Users\user\Downloads\flash>fastboot  flash vm-bootsys_ab C:\Users\user\Downloads\flash\images/vm-bootsys.img   ||
+Warning: skip copying vm-bootsys_ab image avb footer due to sparse image.
+Sending 'vm-bootsys_ab' (246128 KB)                OKAY [  5.937s]
+Writing 'vm-bootsys_ab'                            (bootloader) Partition vm-bootsys_a flashed successfully
+(bootloader) Partition vm-bootsys_b flashed successfully
+OKAY [ 24.889s]
+Finished. Total time: 30.866s
+
+C:\Users\user\Downloads\flash>fastboot  flash cust C:\Users\user\Downloads\flash\images/cust.img   ||
+Warning: skip copying cust image avb footer due to sparse image.
+Sending 'cust' (369328 KB)                         OKAY [  8.922s]
+Writing 'cust'                                     OKAY [  0.001s]
+Finished. Total time: 8.957s
+
+C:\Users\user\Downloads\flash>fastboot  flash recovery_ab C:\Users\user\Downloads\flash\images/recovery.img   ||
+Warning: skip copying recovery_ab image avb footer (recovery_ab partition size: 0, recovery_ab image size: 104857600).
+Sending 'recovery_ab' (102400 KB)                  OKAY [  2.472s]
+Writing 'recovery_ab'                              (bootloader) Partition recovery_a flashed successfully
+(bootloader) Partition recovery_b flashed successfully
+OKAY [ 20.244s]
+Finished. Total time: 22.888s
+
+C:\Users\user\Downloads\flash>fastboot  flash boot_ab C:\Users\user\Downloads\flash\images/boot.img   ||
+Warning: skip copying boot_ab image avb footer (boot_ab partition size: 0, boot_ab image size: 201326592).
+Sending 'boot_ab' (196608 KB)                      OKAY [  4.723s]
+Writing 'boot_ab'                                  (bootloader) Partition boot_a flashed successfully
+(bootloader) Partition boot_b flashed successfully
+OKAY [ 24.373s]
+Finished. Total time: 29.139s
+
+C:\Users\user\Downloads\flash>fastboot  flash misc C:\Users\user\Downloads\flash\images\misc.img   ||
+Sending 'misc' (8 KB)                              OKAY [  0.001s]
+Writing 'misc'                                     OKAY [  0.001s]
+Finished. Total time: 0.037s
+
+C:\Users\user\Downloads\flash>fastboot  set_active a   ||
+Setting current slot to 'a'                        OKAY [  0.007s]
+Finished. Total time: 0.015s
+
+C:\Users\user\Downloads\flash>fastboot  reboot   ||
+Rebooting                                          OKAY [  0.000s]
+Finished. Total time: 0.003s
+
+C:\Users\user\Downloads\flash>

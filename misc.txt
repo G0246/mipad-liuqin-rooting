@@ -1,0 +1,5 @@
+device=liuqin
+build_number=OS2.0.203.0.VMYCNXM
+userdata_version=20250609.0000.00
+mi_os_build_version=OS2.0.203.0.VMYCNXM
+custom_bulid_number=liuqin.cn.1.1.0049
