@@ -8,8 +8,8 @@
 > [!NOTE]
 > Unlock bootloader will factory reset and clear all your data, backup before you do so.
 
-1. If you are using on HyperOS, then you need to follow the instructions to bypass [here](https://github.com/MlgmXyysd/Xiaomi-HyperOS-BootLoader-Bypass?tab=readme-ov-file#%EF%B8%8F-how-to-use). (If you are on MIUI, then skip this step.)
-2. Assuming you have followed the instructions above correctly and binded your Xiaomi account to your device, you can then use the [official Mi Unlock tool](https://en.miui.com/unlock/index.html) to check remaining time.
+1. If you are on HyperOS, then you need an extra step and follow the instructions to bypass the bootloader using another [tool](https://github.com/MlgmXyysd/Xiaomi-HyperOS-BootLoader-Bypass?tab=readme-ov-file#%EF%B8%8F-how-to-use). (Skip this step if you are on MIUI.)
+2. Assuming you have followed the instructions above correctly and binded your Xiaomi account to your device, you can then use the official [Mi Unlock tool](https://en.miui.com/unlock/index.html) to check remaining time.
 3. Reboot your device to bootloader and connect it to your computer. **(Make sure you have the necessary drivers!)**
 4. Open the Mi Unlock tool and log in with your Xiaomi account, follow the on-screen instructions to unlock the bootloader.
 ---
