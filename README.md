@@ -1,9 +1,30 @@
-# mipad-liuqin-rooting
-All the resources and tools I used on my tablet.
-
+# Unlocking the bootloader
+> [!WARNING]
+> The steps provided below are relatively straightforward, however if you're still not sure how to proceed, I advise you to use your device normally and avoid unlocking the bootloader.
 ---
-# Unlocking bootloader
-> [!CAUTION]
-> Section unfinished
-## 1. Official method
-1. Download MiFlash
+## HyperOS bypass / MIUI method
+1. If you are using on HyperOS, then you need to follow the instructions to bypass [here](https://github.com/MlgmXyysd/Xiaomi-HyperOS-BootLoader-Bypass?tab=readme-ov-file#%EF%B8%8F-how-to-use). (If you are on MIUI, then skip this step.)
+2. Assuming you have followed the instructions above correctly and binded your Xiaomi account to your device, you can then use the [official unlock tool](https://en.miui.com/unlock/index.html) to check remaining time.
+3. Open the Mi Unlock tool and log in with your Xiaomi account, follow the on-screen instructions to unlock the bootloader.
+---
+## Upgrading / Downgrading system version
+1. Download the official firmware you want to use from [xiaomirom](https://xiaomirom.com/en/) or other simillar firmware websites.
+2. Extract it twice until you see the contents.
+> [!TIP]
+> I don't like using the official MiFlash tool because the default settings will lock your bootloader and cause you to waste more time. You can avoid using it by following the steps below.
+3. Download [SDK Platform Tools](https://developer.android.com/tools/releases/platform-tools) from Google and extract the contents.
+4. Put the SDK platform tools file into the firmware folder you just extracted.
+5. Reboot your device to bootloader and connect it to your computer. (Make sure you have the nesscary drivers)
+6. Run `flash_all.bat` from Command Prompt and for it to finish.
+7. The device should automatically reboot and enters the new system.
+
+## Rooting the device
+1. Download the official firmware you want to use from [xiaomirom](https://xiaomirom.com/en/) or other simillar firmware websites.
+2. Extract it twice until you see the contents.
+3. Copy `boot.img` and move it to your device.
+4. Download [Magisk](https://github.com/topjohnwu/Magisk/releases) and patch the image, it should look like `magisk_patched-00000_XXXXX.img`.
+5. Move it back to your computer.
+5. Reboot your device to bootloader.
+6. Patch the image using the command `fastboot flash boot magisk_patched-00000_XXXXX.img`, this will flash the patched boot image into boot sector.
+7. Reboot.
+8. Now your device is rooted!
