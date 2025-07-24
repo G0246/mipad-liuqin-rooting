@@ -1,6 +1,8 @@
 # Unlocking the bootloader
 > [!WARNING]
 > The steps provided below are relatively straightforward, however if you're still not sure how to proceed, I advise you to use your device normally and avoid unlocking the bootloader.
+>
+> A computer is needed for rooting or bootloader unlocking; please get one ready.
 ---
 ## HyperOS bypass / MIUI method
 > [!NOTE]
@@ -18,9 +20,9 @@
 2. Extract it twice until you see the contents.
 3. Download [SDK Platform Tools](https://developer.android.com/tools/releases/platform-tools) from Google and extract the contents.
 4. Put the SDK platform tools file into the firmware folder you just extracted.
-5. Reboot your device to bootloader and connect it to your computer. (Make sure you have the nesscary drivers)
-6. Run `flash_all.bat` from Command Prompt and for it to finish.
-7. The device should automatically reboot and enters the new system.
+5. Reboot your device to bootloader and connect it to your computer. **(Make sure you have the necessary drivers!)**
+6. Run `flash_all.bat` from Command Prompt and wait patiently for it to finish.
+7. The device should automatically reboot to the new system.
 
 ## Rooting the device
 > [!IMPORTANT]
