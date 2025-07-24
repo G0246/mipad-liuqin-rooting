@@ -28,3 +28,6 @@
 6. Patch the image using the command `fastboot flash boot magisk_patched-00000_XXXXX.img`, this will flash the patched boot image into boot sector.
 7. Reboot.
 8. Now your device is rooted!
+
+## Disclaimer
+**By following this tutorial, I am not responsible for any damages caused to your device or data. Please have basic common sense and do more research if you are unsure about something.**
