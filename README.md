@@ -16,7 +16,7 @@
 3. Reboot your device to bootloader and connect it to your computer. **(Make sure you have the necessary drivers!)**
 4. Open the Mi Unlock tool and log in with your Xiaomi account, follow the on-screen instructions to unlock the bootloader.
 ---
-## Upgrading / Downgrading system version
+# Upgrading / Downgrading system version
 > [!TIP]
 > I don't like using the official MiFlash tool because the default settings will lock your bootloader and just waste you more time. To minimize human error, you can avoid using it by following the steps below.
 
@@ -27,8 +27,8 @@
 5. Reboot your device to bootloader and connect it to your computer. **(Make sure you have the necessary drivers!)**
 6. Run `flash_all.bat` that comes with it from Command Prompt and wait patiently for it to finish.
 7. The device should automatically reboot to the new system.
-
-## Rooting the device
+---
+# Rooting the device
 > [!IMPORTANT]
 > **PLEASE** make sure the firmware you downloaded is correct for your device model, making this mistake can brick it!
 
