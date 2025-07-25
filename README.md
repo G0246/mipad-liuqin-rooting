@@ -1,5 +1,5 @@
 # Liuqin Rooting
-**No files are required for the tutorial below from this repository; this is only used to store my configurations and other customizations.**
+**No files are required for the tutorial below from this repository; this is only used to store my configurations and other files.**
 
 # Unlocking the bootloader
 > [!WARNING]
