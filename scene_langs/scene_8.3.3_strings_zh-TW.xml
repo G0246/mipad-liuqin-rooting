@@ -1,0 +1,1673 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?><resources>
+<string name="_default">默認</string>
+<string name="accessibility_activate">未激活輔助服務，點此去激活</string>
+<string name="accessibility_activate_desc">按應用調節性能、自動啟用定位、記錄耗電速度，均需要激活此服務</string>
+<string name="accessibility_activate_desc2">需要激活輔助服務才能按應用統計功耗</string>
+<string name="accessibility_app_config_updated">配置參數已更新，將在下次切換應用時生效！</string>
+<string name="accessibility_closed">Scene - 輔助服務已關閉！</string>
+<string name="accessibility_disconnected">輔助服務已失效，請重新激活輔助服務！</string>
+<string name="accessibility_please_activate">請在系統設置裡激活[Scene 輔助服務]選項</string>
+<string name="accessibility_running">輔助服務已激活</string>
+<string name="accessibility_service_description">Scene增強服務
+你需要激活本服務，才能使用以下功能：
+
+1.性能調節（根據前台應用自動調整性能）.
+
+2.自動行為（在開關屏幕時切換網絡或切換應用時回收進程）.
+
+3.自動安裝（安裝第三方應用時自動點擊下一步）</string>
+<string name="accessibility_service_name">SCENE-輔助服務</string>
+<string name="accessibility_stoped">Scene - 輔助服務已關閉！</string>
+<string name="accessibility_updated">輔助服務配置已更新~</string>
+<string name="addin_continue">繼續</string>
+<string name="addin_deviceinfo">機型修改</string>
+<string name="addin_deviceinfo_desc">通過更改build.prop偽裝機型，部分手機可能會無法開機或出現Bug</string>
+<string name="addin_dex2oat_helplink">https://source.android.com/devices/tech/dalvik/jit-compiler?hl=zh-cn</string>
+<string name="addin_dpi">DPI、分辨率修改</string>
+<string name="addin_dpi_desc">自定義手機DPI或分辨率，可能導致設備無法正常啟動，或UI錯誤</string>
+<string name="addin_force_dex_compile">強制dex2oat編譯</string>
+<string name="addin_force_dex_compile_desc">對應用進行dex2oat編譯，降低運行時的CPU和RAM佔用。編譯過程可能需要半個小時，系統更新后需要重新編譯！</string>
+<string name="addin_fullscreen_on">沉浸式體驗</string>
+<string name="addin_fullscreen_on_desc">自動隱藏狀態欄、導航欄</string>
+<string name="addin_mac">修改MAC地址（方案1）</string>
+<string name="addin_mac_2">修改MAC地址（方案2）</string>
+<string name="addin_mac_desc">自定義手機WIFI網卡MAC地址，僅支持部分設備</string>
+<string name="addin_mac_desc_2">自定義手機WIFI網卡MAC地址，僅支持部分設備，比較適合Android Q+</string>
+<string name="addin_wifi">查看保存的WIFI</string>
+<string name="addin_wifi_desc">解析/data/misc/wifi目錄下的wpa_supplicant.conf或WifiConfigStore.xml</string>
+<string name="agree">同意繼續</string>
+<string name="am_activity">活動</string>
+<string name="am_activity_disabled">這個Activity被禁用了，無法打開</string>
+<string name="am_activity_permission">沒有權限啟動這個Activity</string>
+<string name="am_export">是否導出</string>
+<string name="am_exported">已導出</string>
+<string name="am_exported_desc">未導出(android:exported=false)的活動無法正常打開，需以ADB/ROOT等更高權限打開</string>
+<string name="am_general">概況</string>
+<string name="am_icon">圖標</string>
+<string name="am_input">在此輸入</string>
+<string name="am_no_exported">Not exported</string>
+<string name="am_package_name">包名</string>
+<string name="am_search">搜索內容</string>
+<string name="am_shortcut">快捷方式</string>
+<string name="am_shortcut_fail">無法創建快捷方式，可能沒有權限</string>
+<string name="am_start">啟動</string>
+<string name="am_state">啟用狀態</string>
+<string name="am_title">標題</string>
+<string name="app_chooser_search_hint">查找應用</string>
+<string name="app_donate">打賞</string>
+<string name="app_home">概覽</string>
+<string name="app_name">Scene</string>
+<string name="app_name_mode_switch">Scene-快速切換模式</string>
+<string name="app_name_short">Scene</string>
+<string name="app_nav">功能</string>
+<string name="app_selected_none">一個應用也沒有選中！</string>
+<string name="app_tuner">調節</string>
+<string name="app_user">用戶</string>
+<string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+<string name="appops_quickly_grant">快速授權</string>
+<string name="appops_quickly_grant_app">應用[%s]正在請求獲取權限
+[%s]
+是否允許？</string>
+<string name="appops_quickly_grant_desc">* This prompt is displayed by the SCENE</string>
+<string name="appops_search">搜索權限名稱</string>
+<string name="apps_install_path">安裝路徑</string>
+<string name="apps_op_android_n">該功能隻支持Android N（7.0）以上的系統！</string>
+<string name="apps_op_backup">備份應用</string>
+<string name="apps_op_backup_apk">備份APK</string>
+<string name="apps_op_backup_apk_desc">將會提取APK文件到/sdcard/backups目錄下</string>
+<string name="apps_op_backup_appops">備份權限配置</string>
+<string name="apps_op_backup_appops_desc">備份此應用的權限設置(Appops)</string>
+<string name="apps_op_backup_confirm">備份選中的 %d 個應用？</string>
+<string name="apps_op_backup_desc">備份應用安裝包文件</string>
+<string name="apps_op_clear">清除數據</string>
+<string name="apps_op_clear_confirm">確定將選中的 %d 個應用數據清空？</string>
+<string name="apps_op_clear_desc">清空應用數據，回收存儲空間</string>
+<string name="apps_op_clear_user">僅限當前用戶</string>
+<string name="apps_op_clear_user_desc">清空應用在當前用戶的數據，不影響其它用戶</string>
+<string name="apps_op_completed">操作完成！</string>
+<string name="apps_op_copied">已復制：</string>
+<string name="apps_op_copy_package_name">復制包名</string>
+<string name="apps_op_copy_package_name_desc">復制此應用的PackageName</string>
+<string name="apps_op_delete">刪除應用</string>
+<string name="apps_op_delete_backup">刪除備份</string>
+<string name="apps_op_delete_backup_confirm">永久刪除這些備份文件？</string>
+<string name="apps_op_delete_backup_desc">刪除此應用的備份數據</string>
+<string name="apps_op_delete_confirm">已選擇 %d 個應用，刪除系統應用可能導致功能不正常，甚至無法開機，確定要繼續刪除？</string>
+<string name="apps_op_delete_desc">刪除該系統應用的安裝包</string>
+<string name="apps_op_dex2oat">Dex2oat</string>
+<string name="apps_op_dex2oat_compact">壓縮</string>
+<string name="apps_op_dex2oat_compact_desc">執行dexopt刪除，恢復存儲空間</string>
+<string name="apps_op_dex2oat_confirm">dex2oat編譯可提升(低端機)運行應用時的響應速度，但會顯著增加存儲空間佔用。
+
+確定為選中的 %d 個應用進行dex2oat編譯嗎？</string>
+<string name="apps_op_dex2oat_desc">對此應用進行dex2oat處理</string>
+<string name="apps_op_dex2oat_everything">Everything模式</string>
+<string name="apps_op_dex2oat_everything_desc">使用Everything模式對應於進行dex2oat編譯</string>
+<string name="apps_op_dex2oat_force">強制重新編譯</string>
+<string name="apps_op_dex2oat_force_desc">無論應用是否已經進行過dex2oat，都強制重新編譯它</string>
+<string name="apps_op_dex2oat_speed">Speed模式</string>
+<string name="apps_op_dex2oat_speed_desc">使用Speed模式對應於進行dex2oat編譯</string>
+<string name="apps_op_error">出現了一些錯誤</string>
+<string name="apps_op_fail">出現錯誤，錯誤碼：</string>
+<string name="apps_op_frozen">凍結(停用)應用</string>
+<string name="apps_op_frozen_confirm">選中了 %d 個應用，你希望把它們的狀態改成?</string>
+<string name="apps_op_frozen_desc">使應用從桌面消失且不可啟動，但仍會在系統的應用管理列表顯示</string>
+<string name="apps_op_frozen_unfrozen">凍結/解凍</string>
+<string name="apps_op_frozen_unfrozen_desc">更改應用的禁用、隱藏狀態</string>
+<string name="apps_op_go_store">在應用商店查看</string>
+<string name="apps_op_go_store_desc">在應用商店尋找並查看此應用</string>
+<string name="apps_op_hide">完全隱藏</string>
+<string name="apps_op_hide_desc">讓應用從桌面和系統的應用管理列表消失，但你仍然可以在Scene找回它</string>
+<string name="apps_op_magisk_clash">Magisk 副作用警告</string>
+<string name="apps_op_magisk_clash_desc">檢測到你正在使用Magisk作為ROOT權限管理器，並且/system/app和/system/priv-app目錄已被某些模塊修改，這可能導致這些目錄被Magisk劫持並且無法寫入！！</string>
+<string name="apps_op_magisk_fail">Magisk操作失敗！</string>
+<string name="apps_op_magisk_reboot">已通過Magisk完成操作，請重啟手機~</string>
+<string name="apps_op_ongoing">正在執行操作……</string>
+<string name="apps_op_restore">還原備份</string>
+<string name="apps_op_restore_all">還原應用&數據</string>
+<string name="apps_op_restore_all_desc">重新安裝應用並恢復備份的數據</string>
+<string name="apps_op_restore_app">恢復應用</string>
+<string name="apps_op_restore_app_desc">重新安裝此應用</string>
+<string name="apps_op_restore_confirm">還原選中的 %d 個應用和權限設置(如果有)嗎？</string>
+<string name="apps_op_restore_data">還原數據</string>
+<string name="apps_op_restore_data_desc">還原此應用的備份數據</string>
+<string name="apps_op_restricted">限制使用</string>
+<string name="apps_op_restricted_desc">使應用圖標變為灰色，並阻止用戶打開，系統要求 Android P+</string>
+<string name="apps_op_transfer_magisk">創建Magisk模塊</string>
+<string name="apps_op_transfer_magisk_desc">通過創建並刷入Magisk模塊，可在不修改系統分區的情況下，達到同樣的效果</string>
+<string name="apps_op_transfer_priv_desc">將應用復制到/system/priv-app目錄下</string>
+<string name="apps_op_transfer_sys">轉為系統應用</string>
+<string name="apps_op_transfer_sys_desc">將應用復制到系統目錄</string>
+<string name="apps_op_transfer_system_desc">將應用復制到/system/app目錄下，適用於大多數情況</string>
+<string name="apps_op_transfer_warning">部分應用遷移到系統目錄會無法運行。
+此外，你需要解鎖System分區，或安裝Magisk(19.3+)。
+
+轉換完成后，請重啟手機！</string>
+<string name="apps_op_translate_backup">[備份</string>
+<string name="apps_op_translate_clear_cache">[清除緩存</string>
+<string name="apps_op_translate_clear_data">[清除數據</string>
+<string name="apps_op_translate_compile">[編譯</string>
+<string name="apps_op_translate_copy">[復制</string>
+<string name="apps_op_translate_delete">[刪除</string>
+<string name="apps_op_translate_disable">[禁用</string>
+<string name="apps_op_translate_enable">[啟用</string>
+<string name="apps_op_translate_hide">[隱藏</string>
+<string name="apps_op_translate_install">[安裝</string>
+<string name="apps_op_translate_link">[鏈接</string>
+<string name="apps_op_translate_restore">[還原</string>
+<string name="apps_op_translate_show">[顯示</string>
+<string name="apps_op_translate_skip">[跳過</string>
+<string name="apps_op_translate_uninstall">[卸載</string>
+<string name="apps_op_uninstall">卸載</string>
+<string name="apps_op_uninstall_confirm">確定卸載選中的 %d 個應用？</string>
+<string name="apps_op_uninstall_desc">卸載選中的應用</string>
+<string name="apps_op_uninstall_keep">保留應用數據</string>
+<string name="apps_op_uninstall_keep_desc">卸載時保留此應用所有數據
+如果你准備降級此應用或安裝不同簽名版本，請勿勾選！</string>
+<string name="apps_op_uninstall_updated">卸載更新</string>
+<string name="apps_op_uninstall_updated_confirm">確定卸載選中的 %d 個系統應用？</string>
+<string name="apps_op_uninstall_updated_desc">回退為系統自帶版本</string>
+<string name="apps_op_uninstall_user">從當前用戶卸載</string>
+<string name="apps_op_uninstall_user_desc">隻從當前用戶卸載，其它用戶可以繼續使用</string>
+<string name="apps_package_name">應用包名</string>
+<string name="apps_retrieve">找回應用</string>
+<string name="apps_retrieve_adb_require">無法執行恢復</string>
+<string name="apps_retrieve_adb_require_desc">基礎模式下無法恢復應用，請切換至ADB/ROOT模式，或通過adb shell執行以下代碼:</string>
+<string name="apps_retrieve_confirm">確定重置所有應用?</string>
+<string name="apps_retrieve_fail">以下應用未能恢復</string>
+<string name="apps_retrieve_fail_desc">可嘗試刪除 /data/system/users/0/package-restrictions.xml 強制重置所有應用狀態</string>
+<string name="apps_retrieve_tip">如果應用無法恢復，可嘗試刪除 /data/system/users/0/package-restrictions.xml</string>
+<string name="apps_search">查找應用</string>
+<string name="apps_search_placeholder">搜索應用名</string>
+<string name="apps_sync_download">批量卸載</string>
+<string name="apps_tag_above_backed">♻高於備份版本</string>
+<string name="apps_tag_backed">⭐已備份</string>
+<string name="apps_tag_below_backed">💔低於備份版本</string>
+<string name="apps_tag_frozen">❄已凍結</string>
+<string name="apps_tag_full_backed">🔄有備份數據</string>
+<string name="apps_tag_installed">⭐已安裝</string>
+<string name="apps_tag_new_installed">♻已安裝新版</string>
+<string name="apps_tag_old_installed">💔已安裝舊版</string>
+<string name="apps_tag_suspended">🚫已停用</string>
+<string name="apps_tag_system_app_updated">🔒更新的系統應用</string>
+<string name="apps_userid_none">獲取用戶ID失敗！</string>
+<string name="auto_start">自啟動</string>
+<string name="balance">均衡模式</string>
+<string name="balance_desc">慢點 世界賞心悅目</string>
+<string name="balance_short">均衡</string>
+<string name="battery_auto_boot_desc">OK，如果你要手機重啟后自動開啟本功能，請允許Scene開機自啟！</string>
+<string name="battery_bp">充電保護</string>
+<string name="battery_bp_desc">達到指定電量后停止充電
+
+注意：長期使用可能導致電量顯示失准</string>
+<string name="battery_bp_level_desc">電量限制值（%）</string>
+<string name="battery_bp_status">達到%d%%停止充電，低於%d%%恢復</string>
+<string name="battery_charge_disable">禁止充電</string>
+<string name="battery_charge_resume">恢復充電</string>
+<string name="battery_delete_log">刪除電池記錄</string>
+<string name="battery_delete_log_desc">刪除電池使用記錄需要立即重啟手機，是否繼續？</string>
+<string name="battery_exec_desc">Scene會根據你的選擇在不同時機執行速度變更，具體差異如下
+
+降低速度：隻在充電器連接和電量百分比變化時重新設置充電速度
+加速充電：電池狀態發生變化、充電器連接時重新設置充電速度
+往死裡充：在[充電加速]的邏輯基礎上，每秒自動重新設置充電速度</string>
+<string name="battery_exec_option">充電調速目的</string>
+<string name="battery_forgery">數據偽裝</string>
+<string name="battery_forgery_full_now">充滿容量</string>
+<string name="battery_forgery_ratio">電池電量</string>
+<string name="battery_low">電量過低，請及時充電！</string>
+<string name="battery_manual_control">手動控制</string>
+<string name="battery_night_mode">動態充電速度</string>
+<string name="battery_night_mode_desc">在接近充滿時調至緩慢充電
+
+並在夜間主動降低充電速度</string>
+<string name="battery_night_mode_time">%02d:%02d</string>
+<string name="battery_pd_active_0">未進入PD快充模式</string>
+<string name="battery_pd_active_1">已進入PD快充模式</string>
+<string name="battery_pd_active_state">當前狀態：</string>
+<string name="battery_pd_active_unknown">未知</string>
+<string name="battery_pd_allowed">USB-PD快充</string>
+<string name="battery_pd_allowed_desc">手機會根據兼容情況決定是否激活USB-PD充電，無需手動設置。手動開關會導致充電速度緩慢，因此不允許手動修改！</string>
+<string name="battery_qc_charger">充電調速</string>
+<string name="battery_qc_charger_desc">調整充電速度限制。瘋狂調高毫無意義，因為並不會取得實際效果，請在有效范圍內調節數值
+
+注意：上限數值僅供參考，請以實際充電速度為准！</string>
+<string name="battery_qc_rehoot_desc">充電加速服務已禁用，可能需要重啟手機才能恢復默認設置！</string>
+<string name="battery_reality_limit">實際上限電流：</string>
+<string name="battery_require">需要開啟</string>
+<string name="battery_status_charging">充電中</string>
+<string name="battery_status_discharging">未充電</string>
+<string name="battery_status_full">已充滿</string>
+<string name="battery_status_not_charging">未充電</string>
+<string name="battery_status_sum">約充入 %.2fWh</string>
+<string name="battery_status_unknown">狀態未知</string>
+<string name="battery_step_charge">階梯式充電</string>
+<string name="battery_step_charge_desc">系統根據電量分階段調整充電速度上限，有助於保護電池壽命
+
+一般建議保持默認設置</string>
+<string name="battery_time_get_up">起床時間</string>
+<string name="battery_time_sleep">入睡時間</string>
+<string name="battery_title">電池：</string>
+<string name="battery_title_desc1">如需使用“充電調速”、“充電保護”功能，請務必保持Scene后台運行！</string>
+<string name="battery_uevent_title">$ bms/uevent</string>
+<string name="battery_usb_uevent_title">$ usb/uevent</string>
+<string name="boot_after_auto_modify">開機后自動修改</string>
+<string name="boot_charge_booster">開啟充電加速…</string>
+<string name="boot_cpuset">設置CPU控制參數…</string>
+<string name="boot_fail">自啟動任務未執行</string>
+<string name="boot_freeze">凍結偏見應用…</string>
+<string name="boot_lmk">調整LMK參數…</string>
+<string name="boot_modify_mac">修改MAC地址…</string>
+<string name="boot_resize_zram">設置ZRAM容量…</string>
+<string name="boot_script_running">正在執行自啟動腳本…</string>
+<string name="boot_success">已完成開機自啟動</string>
+<string name="boot_swapon">啟動SWAP…</string>
+<string name="bottom_sheet_behavior">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
+<string name="btn_apply">應用</string>
+<string name="btn_back">取消</string>
+<string name="btn_cancel">取消</string>
+<string name="btn_confirm">確定</string>
+<string name="btn_continue">繼續</string>
+<string name="btn_copy_output">復制輸出</string>
+<string name="btn_delete">刪除</string>
+<string name="btn_dontshow">不再顯示</string>
+<string name="btn_enable">啟用</string>
+<string name="btn_execute">執行</string>
+<string name="btn_exit">退出</string>
+<string name="btn_help">幫助</string>
+<string name="btn_hide">隱藏</string>
+<string name="btn_i_know">我知道了</string>
+<string name="btn_iknow">知道了</string>
+<string name="btn_modify_confirm">確認修改</string>
+<string name="btn_next_step">下一步</string>
+<string name="btn_no">否</string>
+<string name="btn_not_now">回頭再說</string>
+<string name="btn_reboot">重啟</string>
+<string name="btn_restore">還原</string>
+<string name="btn_resume">恢復</string>
+<string name="btn_resume_selected">恢復選中</string>
+<string name="btn_retry">重試</string>
+<string name="btn_save">保存</string>
+<string name="btn_skip">跳過</string>
+<string name="btn_test_run">測試運行</string>
+<string name="btn_yes">是</string>
+<string name="busybox_nonsupport">Scene集成的Busybox不支持你當前系統，請自己下載並安裝Busybox</string>
+<string name="bypass_switch">啟用</string>
+<string name="bypass_switch_desc">在使用性能、極速模式運行游戲時啟用旁路供電</string>
+<string name="bypass_threshold">閾值(℃)</string>
+<string name="bypass_threshold_desc">溫度高於此值時激活旁路供電</string>
+<string name="bypass_warn">僅一部分設備支持旁路供電</string>
+<string name="cache_recycle">回收緩存</string>
+<string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
+<string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
+<string name="character_counter_pattern">%1$d/%2$d</string>
+<string name="charge_capacity_time">電量 / 時間</string>
+<string name="charge_current">電流 / 時間</string>
+<string name="charge_display_keep">保持屏幕常亮</string>
+<string name="charge_power">功率 / 時間</string>
+<string name="charge_temperature">溫度 / 時間</string>
+<string name="chip_text">Chip text</string>
+<string name="clear_text_end_icon_content_description">Clear text</string>
+<string name="copy_fail">復制失敗</string>
+<string name="copy_success">復制成功</string>
+<string name="detail">詳情</string>
+<string name="detail_app_uninstalled">所選的應用已被卸載！</string>
+<string name="detail_automate">打開應用自動執行操作</string>
+<string name="detail_brightness_manual">關閉自動亮度</string>
+<string name="detail_category">分類</string>
+<string name="detail_dis_notification">屏蔽通知</string>
+<string name="detail_disable_keys">屏蔽按鍵</string>
+<string name="detail_disable_notification">屏蔽通知</string>
+<string name="detail_dynamic_required">請先回到調節界面，開啟 [性能調節] 功能</string>
+<string name="detail_general">基本設置</string>
+<string name="detail_gps_on">啟用定位（離開后還原）</string>
+<string name="detail_immerse">沉浸體驗</string>
+<string name="detail_immerse_nav">隱藏導航欄</string>
+<string name="detail_immerse_status">隱藏狀態欄</string>
+<string name="detail_immerse_tip">屏蔽通知時Scene會自動清除新通知，可能錯過重要消息</string>
+<string name="detail_manual_brightness">獨立亮度</string>
+<string name="detail_open_gps">啟用定位</string>
+<string name="detail_refresh_rate">刷新率</string>
+<string name="detail_refresh_rate_keep">設定將一直生效，直至重啟手機！</string>
+<string name="detail_refresh_rate_max">刷新率(活動)</string>
+<string name="detail_refresh_rate_min">刷新率(非活動)</string>
+<string name="detail_reset">設定重置</string>
+<string name="detail_reset_desc">這將清空你對單個應用配置的【性能調節、獨立亮度、屏幕旋轉、內存(cgroup)、自動加速、性能監視器】選項！</string>
+<string name="detail_reset_title">確定重置？</string>
+<string name="detail_rotation">旋轉屏幕</string>
+<string name="detail_scene_extra">Scene功能</string>
+<string name="detail_scene_monitor">性能監視器</string>
+<string name="detail_scene_monitor_desc">顯示Scene的迷你性能監視器(OLED設備小心燒屏哦~)</string>
+<string name="detail_schedule">調節性能至</string>
+<string name="detail_tuning">性能調節</string>
+<string name="device_unsupport">該功能暫不支持您的設備！</string>
+<string name="dex2oat_compiling">dex2oat編譯中</string>
+<string name="dex2oat_completed">dex2oat編譯完成</string>
+<string name="dex2oat_mode_compact">壓縮APP減少空間佔用，但運行性能會下降</string>
+<string name="dex2oat_mode_everything">編譯一切可以被編譯的內容</string>
+<string name="dex2oat_mode_profile">對配置文件中列出的(熱點)函數進行 AOT 編譯</string>
+<string name="dex2oat_mode_reset">重置編譯的內容，還原剛安裝時的狀態</string>
+<string name="dex2oat_mode_select">選擇dex2oat編譯方式</string>
+<string name="dex2oat_mode_speed">對所有函數進行 AOT 編譯</string>
+<string name="dex2oat_notification_channel">后台編譯</string>
+<string name="dex2oat_principle">了解工作原理</string>
+<string name="dex2oat_reset_running">dex2oat重置中</string>
+<string name="dialog_addin_by_magisk">已通過Magisk更改參數，請重啟手機~</string>
+<string name="dialog_addin_device_danger">警告：修改機型可能導致無法開機，或部分功能不能使用！</string>
+<string name="dialog_addin_device_desc">修改后可點擊“還原”->“確認”恢復修改前的機型，卸載Scene會導致備份的機型信息丟失，請務必還原后再卸載！
+
+或者，你也可以通過重新刷入完整ROM來恢復機型信息！
+
+使用DualBootPatcher多系統軟件切勿使用本功能修改機型！！！</string>
+<string name="dialog_addin_device_detection">檢測到已復制的機型信息：
+
+$copyData
+
+是否立即使用？</string>
+<string name="dialog_addin_device_inner">預設模板</string>
+<string name="dialog_addin_device_nothing">什麼也沒有修改！</string>
+<string name="dialog_addin_device_template">可用的模板</string>
+<string name="dialog_addin_device_template_select">選擇模板</string>
+<string name="dialog_addin_device_warn">機型信息請不要輸入特殊符號！
+已兼容【應用變量】模塊的機型代碼，復制后重新打開此窗口即可使用！</string>
+<string name="dialog_addin_wlan_log">已保存的WIFI記錄</string>
+<string name="dialog_addin_wlan_none">沒有讀取到這個文件，也許不支持您的設備吧！</string>
+<string name="dialog_addin_wlan_pwd">密碼：</string>
+<string name="dialog_addin_wlan_ssid">網絡：</string>
+<string name="dialog_dpi_quickly">快速更改（Android7.0+）</string>
+<string name="dialog_dpi_verify">請檢查你的設備</string>
+<string name="dialog_dpi_verify_desc">現在，請檢查 [界面顯示]、[觸摸操作]、[屏幕指紋解鎖]、[密碼解鎖] 等功能是否正常。
+
+如果倒計時結束你還沒有點擊“確認修改”，Scene將會自動恢復默認分辨率和DPI！</string>
+<string name="dialog_dpi_warn">警告：修改分辨率、DPI可能導致觸摸失靈，或界面錯位無法正常操作！</string>
+<string name="dialog_mac_custom">自定義WLAN MAC</string>
+<string name="dialog_mac_invalid">輸入的MAC地址無效，格式應如 a0:c0:9d:8b:95:01</string>
+<string name="dialog_mac_modify_fail">修改失敗！</string>
+<string name="dialog_mac_modify_ok">MAC已修改</string>
+<string name="dialog_resolution">分辨率</string>
+<string name="do_not_empty">不可為空</string>
+<string name="download">下載</string>
+<string name="download_failed">下載失敗</string>
+<string name="dynamic_auto_disabled">未檢測到配置文件，已自動禁用性能調節！</string>
+<string name="editor_auto_clear">自動優化</string>
+<string name="editor_export">導出</string>
+<string name="editor_import_content">導入配置</string>
+<string name="editor_mt">使用MT編輯</string>
+<string name="editor_reset">重置配置</string>
+<string name="editor_save">保存修改</string>
+<string name="editor_unchanged">未發生修改</string>
+<string name="electricity_double">串聯雙電池</string>
+<string name="electricity_unit_adj">電流單位校准</string>
+<string name="electricity_unit_adj_desc">當前充電速度，除以</string>
+<string name="electricity_unit_adj_desc2">充電應顯示為正數，放電應顯示為負數</string>
+<string name="electricity_unit_as">顯示為：</string>
+<string name="enabled">已啟用</string>
+<string name="error_icon_content_description">Error</string>
+<string name="error_root">抱歉，沒有獲取到ROOT權限</string>
+<string name="error_su_timeout">等待超時，請確保你的Root管理器正在后台運行，並重試！
+
+請確保你沒有阻止“授權管理器(SuperSu、Magisk Manager等)”自啟動，並允許后台彈出窗口、顯示懸浮窗等權限。如果一直沒有彈出授權對話框，建議重啟手機再試！
+</string>
+<string name="execute_fail">執行失敗</string>
+<string name="execute_success">執行成功</string>
+<string name="execute_wait">正在執行，請稍等…</string>
+<string name="executed">操作已完成！</string>
+<string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
+<string name="extra_free_kbytes">extra_free_kbytes(KB)</string>
+<string name="extra_free_kbytes_desc">此值指定Linux內核會額外保留多少物理內存，當內存不足時會立即開始壓縮內存到SWAP/ZRAM，在可用內存回升到合理范圍之前設備會明顯變得緩慢
+
+簡單地說extra_free_kbytes設置越大，則內存回收(swap或殺死進程)越積極，但不建議設置過大，以免浪費物理內存而加重磁盤/處理器負擔！</string>
+<string name="extrem_gt_desc">為當前設備安裝去溫控、鎖幀模塊 (僅適用於ColorOS、RealmeUI)</string>
+<string name="extreme_gt_flyme_desc">為當前設備安裝去溫控、鎖幀模塊 (僅適用於Meizu)</string>
+<string name="fab_transformation_scrim_behavior">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
+<string name="fab_transformation_sheet_behavior">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+<string name="fas_adjust">FAS 開發者選項</string>
+<string name="fas_enable">啟用FAS</string>
+<string name="fas_freq_lock">鎖定CPU頻率</string>
+<string name="fas_freq_lock_desc">鎖定CPU頻率避免被系統或其它APP修改</string>
+<string name="fas_freq_offset">平均頻率偏移</string>
+<string name="fas_freq_offset_desc">使CPU頻率偏向於保持在更高頻率或更低頻率
+低頻率 ← 均衡 → 高頻率</string>
+<string name="fas_l3">DDR/L3控制</string>
+<string name="fas_l3_desc">允許控制DDR、L3延遲</string>
+<string name="fas_log">FAS調試日志</string>
+<string name="fas_log_desc">輸出FAS調試日志到/sdcard/scene_fas.log</string>
+<string name="fas_notify">FAS狀態提示</string>
+<string name="fas_notify_desc">FAS運行狀態發生改變時彈出通知</string>
+<string name="fas_prime_governor">Prime核調速器</string>
+<string name="fas_prime_governor_desc">Prime核心(中核、大核)使用的調速器</string>
+<string name="fas_thread_analyser">線程分析</string>
+<string name="fas_thread_analyser_desc">根據重負載線程調整中核、大核性能配備，從而減少中核產生的性能浪費</string>
+<string name="fas_warn">注：SCENE FAS實時跟蹤屏幕內容更新，但無法區分是游戲內容或是[通知]、[懸浮窗]、[小窗]引發的更新，務必減少各種干擾以提高FAS穩定性.</string>
+<string name="fast">極速模式</string>
+<string name="fast_desc">快樂總是短暫的</string>
+<string name="fast_short">極速</string>
+<string name="file_access_fail">沒有讀取文件的權限！</string>
+<string name="file_creating">創建文件中</string>
+<string name="file_delete_selected">刪除選中的文件？</string>
+<string name="file_dir_empty">該目錄下沒有文件！</string>
+<string name="file_not_found">所選的文件已被刪除，請重新選擇！</string>
+<string name="file_select">選定文件？</string>
+<string name="first_start_select_config">請先下載一個配置文件</string>
+<string name="forget_it">我不同意</string>
+<string name="format_hh_mm">%02d:%02d</string>
+<string name="fps_adb_root_require">需要激活ADB/ROOT模式，才能監測和記錄幀率。現在處於基礎模式，隻能查看歷史數據。</string>
+<string name="fps_all_apps">所有應用</string>
+<string name="fps_delete">確定刪除？</string>
+<string name="fps_delete_desc">你確定要刪除%s的幀率記錄嗎？</string>
+<string name="fps_duration">錄制時長(分)</string>
+<string name="fps_export_confirm">將當前統計會話數據導出到/sdcard/%s。如果文件已存在，將直接覆蓋。</string>
+<string name="fps_export_csv">導出記錄為CSV？</string>
+<string name="fps_export_fail">導出失敗</string>
+<string name="fps_export_success">導出成功</string>
+<string name="fps_export_type_csv">導出為CSV</string>
+<string name="fps_export_type_img">導出為長截圖</string>
+<string name="fps_record_empty">無幀率記錄</string>
+<string name="fps_record_stop_foreground">前台應用發生變化，幀率錄制結束</string>
+<string name="fps_record_stop_power">電池(充電)狀態變化，幀率錄制結束</string>
+<string name="fps_record_stop_screen">屏幕顯示狀態變化，幀率錄制結束</string>
+<string name="fps_record_stoped">幀率錄制結束！</string>
+<string name="fps_remark_hint">未設置備注，點擊此處輸入</string>
+<string name="fps_threads">線程負載統計</string>
+<string name="fps_threads_desc">查看統計的線程負載情況</string>
+<string name="fps_tip">請進入需要記錄幀率的應用，並點擊屏幕右上方顯示[數字]的小按鈕開始記錄幀率！</string>
+<string name="fps_voltage_error">電壓異常，無法計算功耗</string>
+<string name="freeze_batch_add">批量添加快捷方式</string>
+<string name="freeze_batch_add_wran">批量添加快捷方式可能會失敗，你可以長按應用圖標，發送單個快捷方式到桌面！</string>
+<string name="freeze_disable_completed">已凍結應用 ×</string>
+<string name="freeze_enable_completed">已解凍應用 √</string>
+<string name="freeze_entrance_changed">√ 圖標顯示狀態已切換</string>
+<string name="freeze_shortcut_add_fail">創建失敗</string>
+<string name="freeze_shortcut_add_success">創建完成</string>
+<string name="freeze_shortcut_delete_desc">你可能需要手動刪除已添加的快捷方式！</string>
+<string name="freeze_shortcut_lost">快捷方式丟失</string>
+<string name="freeze_shortcut_lost_desc">以下被加入偏見模式的應用，啟動快捷方式已丟失或未創建成功，是否立即重新創建？</string>
+<string name="freeze_thawed_by_scene">已通過Scene解凍應用：</string>
+<string name="freezer_add">添加應用</string>
+<string name="freezer_auto_import">自動添加</string>
+<string name="freezer_auto_import_desc">添加已凍結的普通應用，到應用偏見列表</string>
+<string name="freezer_clear">清空列表</string>
+<string name="freezer_clear_desc">解凍所有應用，並清空應用偏見列表</string>
+<string name="freezer_edit_saved">圖標順序已保存</string>
+<string name="freezer_editing">進入編輯模式，長按圖標可以拖動位置</string>
+<string name="freezer_freeze_all">凍結全部</string>
+<string name="freezer_freeze_all_desc">將偏見列表中的所有應用凍結</string>
+<string name="freezer_freeze_thaw">凍結/解凍</string>
+<string name="freezer_freeze_thaw_desc">切換此應用的凍結狀態</string>
+<string name="freezer_icon">桌面快捷入口</string>
+<string name="freezer_icon_desc">在桌面顯示“應用偏見”管理界面快捷入口</string>
+<string name="freezer_keep_icon">保留桌面圖標</string>
+<string name="freezer_keep_icon_desc">凍結應用時不隱藏桌面圖標，而僅僅將其置灰（與應用管理中的[暫停使用]效果相同），從而避免凍結應用時破壞桌面布局，此功能需要Android P+</string>
+<string name="freezer_qs_invalid">無效的快捷方式！</string>
+<string name="freezer_qs_start_fail">啟動失敗</string>
+<string name="freezer_qs_starting">正在啟動應用……</string>
+<string name="freezer_qs_uninstalled">應用似乎已被卸載！</string>
+<string name="freezer_remove">取消偏見</string>
+<string name="freezer_remove_desc">從偏見列表移除此應用並將其解凍</string>
+<string name="freezer_shortcut_create">添加快捷方式</string>
+<string name="freezer_shortcut_create_desc">添加此應用的快捷方式到桌面</string>
+<string name="freezer_shortcuts_create">添加快捷方式</string>
+<string name="freezer_shortcuts_create_desc">向桌面批量添加快捷方式</string>
+<string name="freezer_timeout">活動時間限制（分鐘）</string>
+<string name="freezer_timeout_desc">離開應用界面超過此時間后凍結，0表示不限制。鎖屏1分鐘后自動凍結所有偏見應用，不受此設置影響！</string>
+<string name="freezer_unfreeze_all">解凍全部</string>
+<string name="freezer_unfreeze_all_desc">將應用偏見列表中的所有應用解凍</string>
+<string name="freezer_uninstall">卸載應用</string>
+<string name="freezer_uninstall_desc">卸載此應用(如果可以卸載的話)</string>
+<string name="freezer_uninstall_dialog">確認卸載？</string>
+<string name="global_default">全局默認</string>
+<string name="help">幫助</string>
+<string name="help_title">說明提示</string>
+<string name="hide_bottom_view_on_scroll_behavior">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
+<string name="home_browser_error">未能啟動瀏覽器！</string>
+<string name="home_cache_cleared">緩存已清理</string>
+<string name="home_core_required">至少應該開啟一個核心</string>
+<string name="home_core_switch">開關CPU核心</string>
+<string name="home_mem">物理內存</string>
+<string name="home_scene">訪問Scene官網</string>
+<string name="home_shell_01">搞不定，你這內核不支持！</string>
+<string name="home_shell_02">空閑SWAP不足以完成自動回收~</string>
+<string name="home_shell_03">不要同時執行多次內存回收操作~</string>
+<string name="home_shell_04">好咯，內存回收結束~</string>
+<string name="home_shell_05">操作失敗，計算容量出錯!</string>
+<string name="home_shell_06">內存充足，不需要清理！</string>
+<string name="home_shell_07">已通過ZRAM回寫釋放足夠的內存</string>
+<string name="home_shell_begin">開始回收少量內存(長按回收更多~)</string>
+<string name="home_swap">交換分區</string>
+<string name="home_time">已開機</string>
+<string name="home_utilization">負載：</string>
+<string name="icon_content_description">Dialog Icon</string>
+<string name="ignore_this_app">忽略此應用</string>
+<string name="img_backup">備份分區鏡像</string>
+<string name="img_backup_desc">導出分區鏡像，你需要確保還有足夠的存儲空間，否則導出的文件可能會殘缺、無效。</string>
+<string name="img_choose_file">選擇文件</string>
+<string name="img_choose_img">選擇IMG</string>
+<string name="img_choose_partition">選擇分區</string>
+<string name="img_device">設備信息</string>
+<string name="img_export_confirm">確定導出？</string>
+<string name="img_export_warn">確定要將 %s 導出為 /sdcard/%s.img嗎，此操作會覆蓋已存在的同名文件。</string>
+<string name="img_fail">操作失敗！</string>
+<string name="img_file_invalid">選中的文件無效 (必須是*.img文件)!</string>
+<string name="img_file_not_found">選中的文件不存在!</string>
+<string name="img_flash_confirm">確定刷入？</string>
+<string name="img_flash_desc">常用於刷入boot、recovery、persist、devcfg、dtbo等img類型文件。刷入錯誤的文件，可能會導致手機無法進入系統，甚至需要返廠維修。請確保選擇的文件有效且適用！</string>
+<string name="img_flash_in">刷入分區鏡像</string>
+<string name="img_flash_warn">確定要將 %s 寫入到 %s 分區嗎？</string>
+<string name="img_kernel">內核版本</string>
+<string name="img_os">系統版本</string>
+<string name="img_slot">當前插槽</string>
+<string name="img_space">剩余空間</string>
+<string name="img_succeed">操作成功</string>
+<string name="img_twrp_inject">AB/VAB TWRP注入</string>
+<string name="img_twrp_inject_desc">將TWRP合並到boot分區。*此操作具有一定風險。</string>
+<string name="item_chooser_search_hint">搜索可選擇項</string>
+<string name="item_view_role_description">Tab</string>
+<string name="keep_alive">常駐通知</string>
+<string name="kepp_state">保持狀態</string>
+<string name="kernel_unsupported">抱歉，您的內核不支持該功能特性~</string>
+<string name="kr_aosp">AOSP專屬</string>
+<string name="kr_aosp_desc">越接近原生的系統越適用</string>
+<string name="kr_aosp_low_power">低電量模式</string>
+<string name="kr_aosp_low_power_critical_level">低電量模式觸發級別</string>
+<string name="kr_aosp_low_power_desc">開關原生安卓系統自帶的省電模式（不是第三方UI定制的省電模式）</string>
+<string name="kr_aosp_low_power_level">低電量級別</string>
+<string name="kr_aosp_low_power_level_desc">設置低電量級別，以及觸發低電量模式的級別</string>
+<string name="kr_aosp_low_power_wran_level">低電量提示級別</string>
+<string name="kr_aosp_net_checker">去除！和×</string>
+<string name="kr_aosp_net_checker_default">默認服務器</string>
+<string name="kr_aosp_net_checker_desc">通過更改網絡檢測服務器，解決狀態欄的WIFI、LTE圖標一直顯示!或X</string>
+<string name="kr_aosp_net_checker_disable">禁用網絡驗証</string>
+<string name="kr_aosp_net_checker_google">Google服務器</string>
+<string name="kr_aosp_net_checker_miui">MIUI服務器</string>
+<string name="kr_aosp_net_checker_reset">還原默認</string>
+<string name="kr_aosp_net_checker_v2ex">V2EX服務器</string>
+<string name="kr_aosp_night_mode">夜間模式</string>
+<string name="kr_aosp_night_mode_auto">自動</string>
+<string name="kr_aosp_night_mode_desc">切換夜間模式開關設置</string>
+<string name="kr_aosp_night_mode_off">關閉</string>
+<string name="kr_aosp_night_mode_on">開啟</string>
+<string name="kr_aosp_night_mode_reboot">切換后重啟</string>
+<string name="kr_aosp_night_mode_reboot_n">不需要（AOSP）</string>
+<string name="kr_aosp_night_mode_reboot_y">重啟</string>
+<string name="kr_aosp_ntp">切換NTP服務器</string>
+<string name="kr_aosp_ntp_address">請輸入你所知道的NTP服務器地址</string>
+<string name="kr_aosp_ntp_custom">自定義NTP服務器</string>
+<string name="kr_aosp_ntp_custom_desc">如果你的系統能正常同步時間，就沒必要更換NTP服務器</string>
+<string name="kr_aosp_ntp_desc">如果你的系統能正常同步時間，就沒必要更換NTP服務器</string>
+<string name="kr_aosp_popup_notification">懸浮通知</string>
+<string name="kr_aosp_popup_notification_desc">收到消息時在屏幕頂部顯示懸浮通知</string>
+<string name="kr_aosp_rotation">旋轉屏幕</string>
+<string name="kr_aosp_rotation_desc">強制旋轉屏幕方向（不能使豎屏應用強制橫屏，但可以把手機倒過來用？）</string>
+<string name="kr_aosp_rotation_inverted_landscape">反轉橫屏</string>
+<string name="kr_aosp_rotation_inverted_portrait">反轉豎屏</string>
+<string name="kr_aosp_rotation_landscape">橫屏</string>
+<string name="kr_aosp_rotation_portrait">正常</string>
+<string name="kr_aosp_satus_airplane">飛行模式</string>
+<string name="kr_aosp_status_alarm_clock">鬧鐘</string>
+<string name="kr_aosp_status_battery">電池</string>
+<string name="kr_aosp_status_bluetooth">藍牙</string>
+<string name="kr_aosp_status_cast">屏幕捕獲(錄屏)</string>
+<string name="kr_aosp_status_headset">耳機</string>
+<string name="kr_aosp_status_icons">隱藏狀態欄圖標</string>
+<string name="kr_aosp_status_icons_desc">設置隱藏的狀態欄圖標</string>
+<string name="kr_aosp_status_ime">輸入法</string>
+<string name="kr_aosp_status_location">定位圖標</string>
+<string name="kr_aosp_status_mobile">手機信號</string>
+<string name="kr_aosp_status_rotate">屏幕旋轉</string>
+<string name="kr_aosp_status_su">ROOT權限</string>
+<string name="kr_aosp_status_volume_mute">音量/靜音</string>
+<string name="kr_aosp_status_zen_mode">勿擾模式</string>
+<string name="kr_app">應用程序</string>
+<string name="kr_app_desc">第三方應用程序相關選項</string>
+<string name="kr_apps_camera2_desc">啟用HAL和EIS，從而支持谷歌相機HDR+功能或避免閃退。可能導致相機無法開啟或切換緩慢</string>
+<string name="kr_apps_camera2_summary">谷歌相機需要自行下載適合自己機型的版本</string>
+<string name="kr_apps_default_app">默認應用設置</string>
+<string name="kr_apps_google_otp">Google 安全碼</string>
+<string name="kr_apps_google_otp_desc">查看Google安全碼頁面，用於授權登錄新的設備</string>
+<string name="kr_apps_google_service">啟用Google服務</string>
+<string name="kr_apps_google_service_desc">關閉此選項以臨時禁用谷歌框架節省電量</string>
+<string name="kr_apps_google_settings">Google設置</string>
+<string name="kr_apps_google_settings_desc">本功能為了方便隱藏了“Google設置”的定制系統，打開“Google設置”</string>
+<string name="kr_apps_google_subscribe">Google 訂閱管理</string>
+<string name="kr_apps_google_subscribe_desc">查看和管理你在Play商店上訂閱的付費內容</string>
+<string name="kr_apps_install_external_storage">外部存儲(SD卡)</string>
+<string name="kr_apps_install_internal_storage">內部存儲（本機）</string>
+<string name="kr_apps_install_location">應用安裝位置</string>
+<string name="kr_apps_install_location_auto">自動（系統自動決定）</string>
+<string name="kr_apps_install_location_wran">注意：部分應用在清單文件裡指定了安裝路徑，安裝位置可能不受此設置控制</string>
+<string name="kr_apps_launcher">默認桌面</string>
+<string name="kr_apps_live_wallpaper">選擇動態壁紙</string>
+<string name="kr_auto_run_item_losted">指定項已丟失</string>
+<string name="kr_bat_doze_clear">清理電池優化白名單</string>
+<string name="kr_bat_doze_clear_desc">適用於Android M+，清理Doze模式白名單應用（某些系統喜歡把一些應用自動添加到白名單，導致這些應用無法被休眠！）</string>
+<string name="kr_bat_frozen">Use Freezer</string>
+<string name="kr_bat_frozen_desc">暫停執行已緩存的應用。此特性來源於使用Google AOSP，可能不適用於中國本土化定制的ROM。</string>
+<string name="kr_bat_frozen_reboot">此修改重啟手機后生效</string>
+<string name="kr_bat_opt">電池優化</string>
+<string name="kr_bat_opt_desc">進入系統的電池優化設置界面</string>
+<string name="kr_battery">電池、充電</string>
+<string name="kr_battery_desc">耗電記錄、低電量</string>
+<string name="kr_bg_task_start">后台任務開始運行</string>
+<string name="kr_bg_task_start_desc">你可以通過系統的通知中心，查看任務運行進度和日志</string>
+<string name="kr_color_picker">請選擇顏色</string>
+<string name="kr_dev">開發者工具</string>
+<string name="kr_dev_desc">適用於開發者的功能</string>
+<string name="kr_dev_developer_settings">開發者選項</string>
+<string name="kr_dev_experimental">實驗性</string>
+<string name="kr_dev_hide_error">隱藏錯誤彈窗</string>
+<string name="kr_dev_hide_error_desc">不要顯示應用崩潰和未響應彈窗</string>
+<string name="kr_dev_hwui_render">HWUI渲染引擎</string>
+<string name="kr_dev_hwui_render_desc">切換HWUI渲染引擎，本功能僅支持Android O(8.x)、Android P(9.0)</string>
+<string name="kr_dev_hwui_vulkan">HWUI使用Vulkan</string>
+<string name="kr_dev_hwui_vulkan_desc">使用基於Vulkan的HWUI渲染引擎，這是Android Q的新特性，已知會導致“播放視頻”嚴重卡頓，部分軟件偶爾未響應。有些手機甚至可能無法進入桌面！</string>
+<string name="kr_dev_log_clear">清logcat緩沖區</string>
+<string name="kr_dev_log_clear_desc">清空logcat緩沖區，以便於重新開始抓取錯誤</string>
+<string name="kr_dev_log_dump">日志轉儲</string>
+<string name="kr_dev_log_dump_desc">logcat -d 到指定到位置</string>
+<string name="kr_dev_log_dump_ok">日志已轉儲到</string>
+<string name="kr_dev_mem_stat">內存使用情況</string>
+<string name="kr_dev_notch">劉海屏</string>
+<string name="kr_dev_notch_no_notch">假裝無缺口</string>
+<string name="kr_dev_notch_no_notch_desc">如果你經常困擾於屏幕頂部出現留空的黑色區域，或玩游戲時屏幕左側不全屏，那這個功能也許能幫到你</string>
+<string name="kr_dev_notch_os">適用系統</string>
+<string name="kr_dev_notch_style">缺口形態</string>
+<string name="kr_dev_notch_style_hole">居中打孔屏</string>
+<string name="kr_dev_ota">安裝OTA更新</string>
+<string name="kr_dev_ota_desc">適用於A/B(含VAB)分區設備的手動安裝更新</string>
+<string name="kr_dev_ota_file">ROM文件路徑</string>
+<string name="kr_dev_ota_summary">注意：這是試驗性功能，可能導致系統/設備損壞！</string>
+<string name="kr_dev_ota_wran">不支持增量包更新。全量更新完之后，ROOT會丟失，需要自行重新獲取ROOT權限。由於不正確操作或【意外】導致的損失，需自行承擔！！！</string>
+<string name="kr_dev_remote_adb">遠程ADB調試</string>
+<string name="kr_dev_remote_adb_desc">開啟設備的網絡調試端口，方便開發人員免數據線連接電腦，千萬不要在公共WIFI網絡環境下開啟本選項！</string>
+<string name="kr_dev_running_service">運行中的服務</string>
+<string name="kr_dev_sandbox">沙箱機制</string>
+<string name="kr_dev_sandbox_default">默認</string>
+<string name="kr_dev_sandbox_desc">開啟沙箱后，所有應用程序將無法訪問本機存儲根目錄（而不僅限於TargetAPI >= Q的應用）</string>
+<string name="kr_dev_sandbox_off">關閉</string>
+<string name="kr_dev_sandbox_on">開啟</string>
+<string name="kr_dev_sandbox_reboot_5s">設備將在5秒重啟~</string>
+<string name="kr_dev_show_anr">顯示后台應用未響應</string>
+<string name="kr_dev_show_anr_desc">為后台應用程序顯示“應用程序未響應（ANR）”對話框</string>
+<string name="kr_dev_show_error">一律顯示崩潰對話框</string>
+<string name="kr_dev_show_error_desc">在每次應用崩潰時顯示對話框</string>
+<string name="kr_download_completed">文件下載成功</string>
+<string name="kr_download_confirm">是否下載文件</string>
+<string name="kr_download_create_fail">創建下載任務失敗</string>
+<string name="kr_download_create_success">開始下載文件</string>
+<string name="kr_download_downloading">文件下載中</string>
+<string name="kr_feas_des">FEAS通過Perfmgr實現，啟用該特性可以在某些游戲中大幅降低功耗。切勿在非游戲場景下開啟！</string>
+<string name="kr_flyme">Meizu專屬</string>
+<string name="kr_flyme_desc">適用於Meizu系的選項</string>
+<string name="kr_hidden_task_running">手速太快了，上個操作還沒完成！</string>
+<string name="kr_invalid_color">輸入的色值無效，僅支持類似 #ff88aa00 的格式</string>
+<string name="kr_kr_ui_navbar_wran">確定切換[虛擬鍵/全面屏設備]標識，這可能導致界面異常？</string>
+<string name="kr_lock_message">此功能已被鎖定</string>
+<string name="kr_miui">MIUI專屬</string>
+<string name="kr_miui_desc">適用於MIUI、HyperOS的選項</string>
+<string name="kr_msm_perf_boost_desc">系統根據用戶操作短時間內提高CPU頻率，極大的提高流暢度，關閉后可能會出現卡頓</string>
+<string name="kr_mtk">MTK/天璣專屬</string>
+<string name="kr_mtk_desc">MTK/天璣處理器用於調試性能的選項</string>
+<string name="kr_oppo">OPPO專屬</string>
+<string name="kr_oppo_desc">適用於OPPO系的選項</string>
+<string name="kr_others">雜項</string>
+<string name="kr_others_desc">其它雜七雜八的功能</string>
+<string name="kr_others_emmc_health">EMMC存儲壽命</string>
+<string name="kr_others_fstrim">執行FSTRIM</string>
+<string name="kr_others_fstrim_desc">一般系統會定時執行</string>
+<string name="kr_others_google_key">Google鍵事件</string>
+<string name="kr_others_self_rescue">[模塊]系統自救</string>
+<string name="kr_others_self_rescue_desc">安裝一個自動救磚模塊，以應對操作不慎導致的系統故障</string>
+<string name="kr_others_temperature_sensors">溫度傳感器</string>
+<string name="kr_others_temperature_sensors_desc">查看溫度傳感器當前數值</string>
+<string name="kr_others_thermal_remove">[模塊]溫控移除</string>
+<string name="kr_others_thermal_remove_desc">創建Magisk模塊，以空文件佔位達到移除溫控的效果</string>
+<string name="kr_others_ufs_health">UFS存儲壽命</string>
+<string name="kr_others_ufs_health_desc">* 數值僅供參考</string>
+<string name="kr_others_ufs_health_op_used">保留區塊磨損</string>
+<string name="kr_others_ufs_health_over">已超過預估壽命</string>
+<string name="kr_others_ufs_health_unknown">未知</string>
+<string name="kr_others_ufs_health_used">已使用壽命</string>
+<string name="kr_others_usap_reboot">好了, 請重啟手機</string>
+<string name="kr_page_after_load">配置解析完成</string>
+<string name="kr_page_before_load">准備解析配置</string>
+<string name="kr_page_load_fail">頁面加載失敗</string>
+<string name="kr_page_load_success">頁面加載成功</string>
+<string name="kr_page_loading">解析配置中</string>
+<string name="kr_page_sh_file_permission">指定的配置文件不存在或無讀取權限</string>
+<string name="kr_page_sh_invalid">無效的頁面配置輸出</string>
+<string name="kr_param_load">獲取狀態</string>
+<string name="kr_param_options_load">加載候選列表</string>
+<string name="kr_params_render">渲染界面……</string>
+<string name="kr_please_choose_app">請選擇應用</string>
+<string name="kr_please_choose_file">請選擇文件</string>
+<string name="kr_please_choose_folder">請選擇目錄</string>
+<string name="kr_please_input_color">請輸入顏色</string>
+<string name="kr_please_select">請選擇</string>
+<string name="kr_qcom">高通/驍龍專屬</string>
+<string name="kr_qcom_desc">高通/驍龍處理器用於調試性能的選項</string>
+<string name="kr_script_task_finished">任務結束</string>
+<string name="kr_script_task_has_error">重要提示</string>
+<string name="kr_script_task_notification">后台任務通知</string>
+<string name="kr_script_task_running">開始運行</string>
+<string name="kr_sdk_discrepancy">系統版本不符</string>
+<string name="kr_sdk_discrepancy_message">此功能隻在SDK%d的系統運行</string>
+<string name="kr_sdk_message">此功能隻在SDK%d ~ %d的系統運行</string>
+<string name="kr_sdk_overtop">系統版本過高</string>
+<string name="kr_sdk_too_low">系統版本過低</string>
+<string name="kr_shell_completed">腳本運行結束</string>
+<string name="kr_shell_finish_error">運行結束，但出現錯誤</string>
+<string name="kr_shortcut_create">添加快捷方式</string>
+<string name="kr_shortcut_create_desc">你希望將“%s”添加到桌面，方便快速使用嗎？</string>
+<string name="kr_shortcut_create_fail">快捷方式創建失敗</string>
+<string name="kr_shortcut_create_success">已發送創建快捷方式申請</string>
+<string name="kr_slice_activity_fail">無法打開活動~</string>
+<string name="kr_slice_script_result">腳本輸出內容</string>
+<string name="kr_system_default">系統默認</string>
+<string name="kr_ui">UI/顯示</string>
+<string name="kr_ui_anim_activity">界面切換動畫時長</string>
+<string name="kr_ui_anim_duration">過渡動畫時長</string>
+<string name="kr_ui_anim_duration_desc">調整各種動畫時長</string>
+<string name="kr_ui_anim_mi">過渡動畫時長</string>
+<string name="kr_ui_anim_mi_desc">該選項隻在部分設備/場景生效，如MIUI 13的桌面動畫速度</string>
+<string name="kr_ui_anim_translation">動畫程序時長</string>
+<string name="kr_ui_anim_window">彈窗動畫時長</string>
+<string name="kr_ui_brightness">亮度</string>
+<string name="kr_ui_brightness_desc">強制更改屏幕亮度</string>
+<string name="kr_ui_brightness_lock">鎖定</string>
+<string name="kr_ui_color_calibration">色彩校正</string>
+<string name="kr_ui_color_calibration0">黑白模式</string>
+<string name="kr_ui_color_calibration1">紅色視弱（紅綠不分）</string>
+<string name="kr_ui_color_calibration2">綠色視弱（紅綠不分）</string>
+<string name="kr_ui_color_calibration3">藍色視弱（藍黃不分）</string>
+<string name="kr_ui_color_calibration_mode">色彩校正模式</string>
+<string name="kr_ui_color_matrix">ColorMatrix</string>
+<string name="kr_ui_color_matrix_desc">通過色彩濾鏡改變屏幕顯示效果</string>
+<string name="kr_ui_color_saturation">色彩飽和度</string>
+<string name="kr_ui_color_saturation_value">飽和度(%)</string>
+<string name="kr_ui_desc">與界面顯示或屏幕相關的選項</string>
+<string name="kr_ui_h_contraste">高對比度模式</string>
+<string name="kr_ui_h_contraste_desc">銳化文字，並增強對比度， 更容易看清文字</string>
+<string name="kr_ui_navbar">虛擬鍵/全面屏設備</string>
+<string name="kr_ui_navbar_desc">標識當前設備沒有實體按鍵，關閉此選項后系統將不會提供手勢和虛擬導航鍵。重啟生效</string>
+<string name="kr_ui_refresh_rate">刷新率</string>
+<string name="kr_ui_refresh_rate_v">刷新率顯示</string>
+<string name="kr_ui_refresh_rate_v_value">在屏幕上顯示當前刷新率</string>
+<string name="kr_ui_split_view">強制分屏</string>
+<string name="kr_ui_split_view_desc">適用於Android 7.0+，同開發者設置中的“強制將Activity設為可調整大小”選項。開啟此項，從而對聲明支持分屏的應用進行分屏操作！</string>
+<string name="kr_ushortcut_nsupported">該功能不支持添加快捷方式</string>
+<string name="kr_write_external_storage">需要讀寫外置存儲權限！</string>
+<string name="license_account">專業版(Account)</string>
+<string name="license_alpha">專業版(Alpha)</string>
+<string name="license_expired">激活已失效</string>
+<string name="license_expiry">有效期至:</string>
+<string name="license_expiry_unknown">有效期至----/--/--</string>
+<string name="license_free">免費版</string>
+<string name="license_launch_failure">啟動失敗，請重試</string>
+<string name="license_msg_expired">試用時間已結束，需要購買專業版才能使用ROOT模式</string>
+<string name="license_msg_expired2">該賬號可用積分為0，請重新購買，或檢查是否登錄了正確的賬號！</string>
+<string name="license_msg_expired3">授權已於%s過期，請重新購買。</string>
+<string name="license_msg_invalid">激活信息無效</string>
+<string name="license_next_cycle">下次計分:</string>
+<string name="license_no_response">請檢查網絡是否順暢，以及Scene是否更新到最近版本</string>
+<string name="license_perpetual">專業版(永久)</string>
+<string name="license_state_expired">已過期</string>
+<string name="license_state_invalid">激活信息無效</string>
+<string name="license_state_not_activated">未激活</string>
+<string name="license_state_unknown">激活狀態:--</string>
+<string name="license_sync_failure">同步激活狀態失敗,</string>
+<string name="license_sync_timeout">同步超時，請確保網絡連接暢通</string>
+<string name="license_trial">專業版(Trial)</string>
+<string name="license_unable_to_activate">激活失敗：</string>
+<string name="limiter_apps">在APP中啟用</string>
+<string name="limiter_apps_desc">運行普通應用時使用輔助調速器抑制處理器性能和功耗</string>
+<string name="limiter_games">在游戲中啟用</string>
+<string name="limiter_games_desc">運行游戲時使用輔助調速器抑制處理器性能和功耗</string>
+<string name="limiter_infinite">SCENE默認</string>
+<string name="limiter_jiffies">jiffies統計</string>
+<string name="limiter_jiffies_desc">從/proc/stat讀取jiffies為單位的負載統計，該數據通常精確到4ms</string>
+<string name="limiter_preference">偏好</string>
+<string name="limiter_scope">作用范圍</string>
+<string name="limiter_toast">狀態提示</string>
+<string name="limiter_toast_desc">輔助調速器啟動時彈出提示</string>
+<string name="lmk_optimize">低內存優化</string>
+<string name="lmk_optimize_desc">讓Scene根據你的RAM容量，自動調整LMK參數，從而增強后台能力（可能導致低內存時卡頓）。如需恢復，請關閉該選項重啟手機，如需開機后自動設置，請允許工具箱自啟動</string>
+<string name="loading">加載中……</string>
+<string name="look_other">在尋找其它功能嗎？</string>
+<string name="low_memory_killer">Low Memory Killer</string>
+<string name="magisk_install_desc">Scene對系統的大部分修改操作，現在都可以通過Magisk模塊的形式進行了。但是，你先要同意Scene在你的手機上自動安裝附加模塊，並重啟手機（建議）！</string>
+<string name="magisk_install_title">Scene附加模塊</string>
+<string name="magisk_search">搜索 模塊名/ID/作者</string>
+<string name="magisk_uninstalled">您的設備未安裝Magisk框架，不能使用本功能~</string>
+<string name="make_choice">請確認</string>
+<string name="material_slider_range_end">Range end,</string>
+<string name="material_slider_range_start">Range start,</string>
+<string name="menu_activities">活動/服務</string>
+<string name="menu_additional">附加功能</string>
+<string name="menu_am">活動/服務</string>
+<string name="menu_app_magisk">附加模塊</string>
+<string name="menu_app_scene">應用策略</string>
+<string name="menu_applictions">應用管理</string>
+<string name="menu_auto_click">自動點擊</string>
+<string name="menu_charge">充電統計</string>
+<string name="menu_charge_control">充電控制</string>
+<string name="menu_command_list">命令列表</string>
+<string name="menu_core_control">CPU 控制</string>
+<string name="menu_custom_command">自定義命令</string>
+<string name="menu_editor">文本編輯</string>
+<string name="menu_files">文件瀏覽</string>
+<string name="menu_filter">屏幕濾鏡</string>
+<string name="menu_fps_chart">幀率記錄</string>
+<string name="menu_freeze">應用偏見</string>
+<string name="menu_gesture">手勢導航</string>
+<string name="menu_group_advance">進階功能</string>
+<string name="menu_group_apps">應用&權限</string>
+<string name="menu_group_diagnose">檢測工具</string>
+<string name="menu_group_magisk">Magisk模塊</string>
+<string name="menu_group_others">其它</string>
+<string name="menu_group_perf">設備性能</string>
+<string name="menu_group_power">充電耗電</string>
+<string name="menu_group_xp">Xposed功能</string>
+<string name="menu_home">概況</string>
+<string name="menu_img">備份還原</string>
+<string name="menu_miui_thermal">溫控編輯</string>
+<string name="menu_module_upload">模塊分享</string>
+<string name="menu_modules">Magisk模塊</string>
+<string name="menu_oplus_orms">ORMS配置</string>
+<string name="menu_other">雜項設置</string>
+<string name="menu_power_utilization">耗電統計</string>
+<string name="menu_processes">進程管理</string>
+<string name="menu_qq">吹牛扯淡</string>
+<string name="menu_qq_preview">Feedback</string>
+<string name="menu_screen_test">屏幕測試</string>
+<string name="menu_share">分享應用</string>
+<string name="menu_sundry">雜項設置</string>
+<string name="menu_swap">SWAP設置</string>
+<string name="menu_uninstalled">[隱藏/卸載]的應用</string>
+<string name="menu_uperf">Uperf</string>
+<string name="menu_xposed_app">應用設置</string>
+<string name="menu_xposed_global">全局設置</string>
+<string name="mi_joyose">特定場景優化配置(Joyose)</string>
+<string name="mi_thermal_config">溫控配置切換</string>
+<string name="mi_thermal_config_desc">替換到/data/vendor/thermal，無需重啟手機立即生效。配置根據系統溫控文件，由程序自動處理生成，請確保你的系統自帶溫控是官方原版！</string>
+<string name="miu_thermal_dir_go">瀏覽選定目錄</string>
+<string name="miu_thermal_dirs">選擇配置來源目錄</string>
+<string name="miui_thermal_apply">應用溫控</string>
+<string name="miui_thermal_apply_desc">將修改后的溫控配置拷貝到 /data/vendor/thermal/config 目錄，使配置立即生效。
+
+經測試，在未遭到破壞性修改的 MIUI 12&12.5系統上，此功能工作正常。其中測試設備包括：855、865870、888處理器機型
+
+配置生效情況自行檢查 /data/vendor/thermal/decrypt.txt 或 /data/vendor/thermal/thermal.dump 判斷！</string>
+<string name="miui_thermal_apply_fail">未能應用溫控配置！</string>
+<string name="miui_thermal_apply_ok">應用溫控配置成功~</string>
+<string name="miui_thermal_apply_waring">無法確認溫控是否應用成功，請檢查日志或通過dump thermal-engine驗証生效情況！</string>
+<string name="miui_thermal_desc">點擊右上角的菜單，選擇並編輯溫控文件，編輯完成后點擊保存~
+
+注意：隨著安卓系統不斷更新，要修改系統分區變得越來越困難，可能修改無法成功保存，或重啟后即被自動還原，建議使用magisk模塊來完成溫控修改！
+
+溫控文件一般是在/system/etc或/vendor/etc目錄下，名稱以“thermal”開頭，后綴為“.conf”</string>
+<string name="miui_thermal_dir_destroyed">系統不支持或目錄已被破壞，無法應用溫控配置！</string>
+<string name="miui_thermal_dis_save">你都還沒打開文件呢，應用個毛啊！</string>
+<string name="miui_thermal_invalid">這個文件名，看上去不是一個溫控配置文件~</string>
+<string name="miui_thermal_readonly">基礎模式下，僅供查看，無法保存</string>
+<string name="miui_thermal_save">保存修改</string>
+<string name="miui_thermal_save_desc">保存對溫控的修改到選中的源文件</string>
+<string name="miui_thermal_save_fail">保存失敗，請檢查是否已授予ROOT權限，以及文件是否被鎖定！</string>
+<string name="mode_adb">ADB模式</string>
+<string name="mode_adb_desc">可以使用大部分[查看]功能和部分[修改]功能</string>
+<string name="mode_basic">基礎模式</string>
+<string name="mode_basic_desc">可以使用部分[查看]功能</string>
+<string name="mode_pro">專業模式</string>
+<string name="mode_root">ROOT模式</string>
+<string name="mode_root_desc">可以使用所有[查看/修改]功能</string>
+<string name="mode_type_free">免費</string>
+<string name="mode_type_pro">專業版</string>
+<string name="module_author">Author(模塊作者)</string>
+<string name="module_delete">刪除模塊</string>
+<string name="module_delete_desc">確定從Scene服務器刪除此模塊？</string>
+<string name="module_detail">DetailContent(詳細介紹)</string>
+<string name="module_download_url">* DownloadUrl(下載地址)</string>
+<string name="module_download_url_required">DownloadUrl(模塊下載地址)是必要的</string>
+<string name="module_id">* ID(模塊ID)</string>
+<string name="module_id_required">ID(模塊ID)是必要的</string>
+<string name="module_login_required">請先完成登錄</string>
+<string name="module_name">Name(模塊名稱)</string>
+<string name="module_rank">用戶評價</string>
+<string name="module_sharer">分享者(UID)</string>
+<string name="module_summary">Description(模塊簡介)</string>
+<string name="module_version_code">VersionCode(版本號)</string>
+<string name="module_version_name">VersionName(版本名稱)</string>
+<string name="monitor_desc">選擇要顯示的監視器懸浮窗</string>
+<string name="monitor_fps">幀率記錄器</string>
+<string name="monitor_fps_desc">顯示用於分析游戲幀率的錄制工具</string>
+<string name="monitor_mini">迷你監視器</string>
+<string name="monitor_mini_desc">顯示CPU、GPU負載和電池溫度</string>
+<string name="monitor_perf">負載監視器</string>
+<string name="monitor_perf_desc">顯示CPU、GPU、RAM和電池狀態
+Tip: 懸浮窗口可點擊[展開/折疊]，雙擊關閉</string>
+<string name="monitor_process">進程監視器</string>
+<string name="monitor_process_desc">顯示運行中的進程，按CPU佔用排序</string>
+<string name="monitor_temperature">溫度監視器</string>
+<string name="monitor_temperature_desc">顯示各個溫度傳感器的數值</string>
+<string name="monitor_threads">線程監視器</string>
+<string name="monitor_threads_desc">監測當前應用消耗CPU資源最多的線程</string>
+<string name="monitor_threads_no_process">未能獲取當前應用進程，請檢查輔助服務是否激活！</string>
+<string name="monitor_title">使用監視器</string>
+<string name="more">了解更多</string>
+<string name="not_enabled">未啟用</string>
+<string name="not_root_disabled">沒有獲得ROOT權限，不能使用本功能</string>
+<string name="not_support_config">未找到可用的配置文件</string>
+<string name="not_support_config_desc">應用沒有自帶適用於你手機的性能調節配置。可以訪問其它配置源查找和下載適用於本設備的配置。</string>
+<string name="notice_channel_boot">自啟動提示</string>
+<string name="notice_channel_task">Scene計劃任務</string>
+<string name="notice_task_completed">Scene計劃任務完成</string>
+<string name="notification_app">App</string>
+<string name="notification_battery">電池</string>
+<string name="notification_filter">通知過濾服務</string>
+<string name="on_execute_please_wait">正在執行操作，請稍等…</string>
+<string name="onloading">正在加載數據…</string>
+<string name="only_adb_mode">此功能需要在ADB模式下才能使用</string>
+<string name="only_adb_or_root_mode">此功能僅在ADB/ROOT模式下可用</string>
+<string name="only_root_mode">此功能需要在ROOT模式下才能使用</string>
+<string name="oppo_cpu_limiter">CPU頻率限制</string>
+<string name="oppo_cpu_limiter_desc">在游戲過程中，根據幀率調節CPU頻率限制。這可能是一種FAS實現。你可以強制關閉，但不能對未適配的游戲強制打開。</string>
+<string name="oppo_fix_ota">修復OTA更新驗証</string>
+<string name="oppo_fix_ota_desc">如果系統更新時，下載了全量包仍提示解壓失敗或dm-verify，可以嘗試點擊本選項</string>
+<string name="oppo_game_touch">高採樣率觸摸</string>
+<string name="oppo_game_touch_desc">啟用更高的觸摸採樣率，這可能造成輕微的功耗增加</string>
+<string name="oppo_install_scan">應用安裝掃描</string>
+<string name="oppo_install_scan_desc">關閉此選項以禁用APP安全掃描程序</string>
+<string name="order">順序</string>
+<string name="orientation_auto">自動旋轉</string>
+<string name="orientation_auto_desc">根據傳感器自動旋轉屏幕方向</string>
+<string name="orientation_default">默認</string>
+<string name="orientation_default_desc">保持應用程序清單聲明的顯示方式</string>
+<string name="orientation_desc">指定此應用運行期間，屏幕顯示方向</string>
+<string name="orientation_force_auto">強制旋轉</string>
+<string name="orientation_force_auto_desc">根據傳感器自動旋轉屏幕方向</string>
+<string name="orientation_horizontal">強制橫屏</string>
+<string name="orientation_horizontal_desc">強制橫屏顯示此應用</string>
+<string name="orientation_title">屏幕顯示方式</string>
+<string name="orientation_unknown">未知設置</string>
+<string name="orientation_vertical">強制豎屏</string>
+<string name="orientation_vertical_desc">強制此應用豎屏顯示</string>
+<string name="orms_export_warn">將正在瀏覽的配置導出到%s，如果文件已存在將會直接覆蓋。</string>
+<string name="orms_no_change">沒有參數需要更改!</string>
+<string name="orms_restore">重置為系統默認配置?</string>
+<string name="password_toggle_content_description">Show password</string>
+<string name="path">路徑</string>
+<string name="pedestal">底座模式</string>
+<string name="perf_auto_start">開機后應用</string>
+<string name="perf_auto_start_desc">開機后應用當前設置，需要允許Scene開機自啟動</string>
+<string name="perf_choose_cores">選擇要使用的核心</string>
+<string name="perf_choose_cpu_governor">選擇CPU調度模式</string>
+<string name="perf_choose_cpu_max">選擇CPU最大頻率</string>
+<string name="perf_choose_cpu_min">選擇CPU最小頻率</string>
+<string name="perf_choose_cpu_params">調度器參數</string>
+<string name="perf_choose_gpu_governor">選擇GPU調度</string>
+<string name="perf_choose_gpu_max">選擇GPU最大頻率</string>
+<string name="perf_choose_gpu_min">選擇GPU最小頻率</string>
+<string name="perf_cpuset_background">用戶后台進程</string>
+<string name="perf_cpuset_foreground">前台進程</string>
+<string name="perf_cpuset_sys_background">系統后台進程</string>
+<string name="perf_cpuset_top">頂層的進程</string>
+<string name="perf_custom">自定義</string>
+<string name="perf_def_power_level">默認功耗級別</string>
+<string name="perf_game_remove">移除該游戲？</string>
+<string name="perf_game_remove_desc">SCENE會針對游戲採用獨特的性能調節策略，如果你將一個游戲從此列表移除，那麼體驗可能會發生改變</string>
+<string name="perf_games">我的游戲</string>
+<string name="perf_governor">調速器</string>
+<string name="perf_governor_detail">查看 ></string>
+<string name="perf_governor_params">微調參數</string>
+<string name="perf_helpinfo">部分手機具有CPU參數動態調整機制，會導致自定義的參數很快失效，此外，溫控也會限制你調高CPU頻率。</string>
+<string name="perf_max_freq">最大頻率</string>
+<string name="perf_max_power_level">最大功耗級別</string>
+<string name="perf_min_freq">最小頻率</string>
+<string name="perf_min_power_level">最小功耗級別</string>
+<string name="perf_save_fail">保存配置文件失敗！</string>
+<string name="perf_time_in_state">頻率使用記錄</string>
+<string name="perf_warn">檢測到你已開啟“性能調節”，你手動對CPU、GPU的修改隨時可能被覆蓋。
+
+同時，手動調整參數還可能對“性能調節”的工作造成不利影響！</string>
+<string name="perf_warn2">檢測到系統中可能限制性能的組件，是否將其禁用(重啟手機后還原)？</string>
+<string name="performance">性能模式</string>
+<string name="performance_desc">玩把游戲壓壓驚</string>
+<string name="performance_short">性能</string>
+<string name="permission_float">請先為Scene授權顯示懸浮窗權限！</string>
+<string name="permission_modify_fail">修改權限失敗！</string>
+<string name="picker_not_item">暫無可用選項！</string>
+<string name="picker_select_none">未選中任何一項！</string>
+<string name="please_choose_backup_dir">請選擇應用備份目錄</string>
+<string name="please_input_number">請輸入數值</string>
+<string name="please_notice">請注意</string>
+<string name="please_wait">請稍等…</string>
+<string name="power_9008_desc">重啟到9008模式，*此模式僅限部分驍龍設備可用</string>
+<string name="power_9008_edl">9008(EDL)</string>
+<string name="power_app_records">使用場景</string>
+<string name="power_app_records_desc">此處統計的數據為：在每個應用前台顯示期間的電池[電流|溫度]平均值，並非指該[耗電|溫度]均由此應用造成！
+
+你需要激活輔助服務，並讓Scene保持后台運行，如果還是沒有記錄數據，請嘗試校准電流單位！</string>
+<string name="power_avg">平均功耗</string>
+<string name="power_cleared">統計記錄已清理</string>
+<string name="power_current_i">充電</string>
+<string name="power_current_o">耗電</string>
+<string name="power_curve">使用過程</string>
+<string name="power_fastboot">Fastboot</string>
+<string name="power_fastboot_desc">重啟到Fastboot模式（俗稱USB線刷模式）</string>
+<string name="power_hot_reboot">熱重啟</string>
+<string name="power_hot_reboot2">隻重啟系統界面而不重新引導系統（可能引發Bug）</string>
+<string name="power_legend_miss_desc">但如果圖表中出現藍色虛線，Scene后台進程被休眠，未能按計劃的頻率記錄電池狀態。</string>
+<string name="power_legend_pause_desc">在手機屏幕關閉時，Scene會停止記錄電池狀態以減少耗電，在圖表中顯示為灰色虛線。</string>
+<string name="power_legend_sc_off">屏幕關閉</string>
+<string name="power_legend_sc_off_pause">屏幕關閉，未記錄電池狀態</string>
+<string name="power_legend_sc_on">屏幕點亮</string>
+<string name="power_legend_sc_on_miss">屏幕點亮，未記錄電池狀態</string>
+<string name="power_peak">峰值記錄</string>
+<string name="power_predict">理論續航</string>
+<string name="power_reboot">重啟</string>
+<string name="power_reboot_desc">正常重啟</string>
+<string name="power_recovery">Recovery</string>
+<string name="power_recovery_desc">重啟到Recovery模式（俗稱卡刷模式）</string>
+<string name="power_shutdown">關機</string>
+<string name="power_shutdown_desc">正常關機</string>
+<string name="power_temperature">溫度</string>
+<string name="power_title">選擇操作</string>
+<string name="power_used">已使用</string>
+<string name="powersave">省電模式</string>
+<string name="powersave_desc">老年人直呼內行</string>
+<string name="powersave_short">省電</string>
+<string name="priority">優先級</string>
+<string name="process">進程</string>
+<string name="process_all">全部</string>
+<string name="process_app">應用</string>
+<string name="process_app_name">應用名</string>
+<string name="process_app_not_found">未找到對應應用</string>
+<string name="process_command">命令</string>
+<string name="process_command_line">命令行</string>
+<string name="process_fail">進程列表加載失敗</string>
+<string name="process_force_empty">強制壓縮內存</string>
+<string name="process_kill">停止</string>
+<string name="process_kill_scene">你不能在這裡殺死Scene</string>
+<string name="process_kill_tip">如需結束進程，請再次點擊</string>
+<string name="process_locked">已鎖定懸浮窗位置，你也可以 [長按] 此圖標，使懸浮窗不可操作</string>
+<string name="process_manage">管理</string>
+<string name="process_not_found">無法獲取詳情，該進程可能已經退出!</string>
+<string name="process_search">搜索進程名</string>
+<string name="process_state">運行狀態</string>
+<string name="process_stop_android">殺死安卓應用</string>
+<string name="process_unsupported">進程管理器暫未兼容你的手機！</string>
+<string name="promote_link">https://tinyurl.com/y3j7vszf</string>
+<string name="require_restart_app">需要重啟應用才能生效</string>
+<string name="ro_product_brand">ro.product.brand=</string>
+<string name="ro_product_device">ro.product.device=</string>
+<string name="ro_product_manufacturer">ro.product.manufacturer=</string>
+<string name="ro_product_model">ro.product.model=</string>
+<string name="ro_product_name">ro.product.name=</string>
+<string name="rr_120">高</string>
+<string name="rr_144">最高</string>
+<string name="rr_60">低</string>
+<string name="rr_90">中</string>
+<string name="rr_active">活動刷新率</string>
+<string name="rr_active_desc">觸摸屏幕或按下按鍵時的刷新率</string>
+<string name="rr_apps">一般應用</string>
+<string name="rr_battery_low">低電量刷新率</string>
+<string name="rr_battery_low_desc">電池電量過低時的刷新率</string>
+<string name="rr_battery_threshold">低電量閾值(%)</string>
+<string name="rr_battery_threshold_desc">電量低於此值時判定為低電量</string>
+<string name="rr_brightness_low">低亮度刷新率</string>
+<string name="rr_brightness_low_desc">屏幕處於較低亮度時的刷新率</string>
+<string name="rr_brightness_threshold">低亮度閾值(%)</string>
+<string name="rr_brightness_threshold_desc">屏幕亮度低於此值時判定為低亮度</string>
+<string name="rr_compatible">兼容模式</string>
+<string name="rr_compatible_desc">使用settings/peak_refresh_rate實現刷新率切換，很容易被系統覆蓋</string>
+<string name="rr_disable_ltpo">禁用LTPO</string>
+<string name="rr_disable_ltpo_desc">處於高刷新率檔位時，強制禁用LTPO</string>
+<string name="rr_display_modes">DisplayModes [120] [90] [60]</string>
+<string name="rr_display_modes_desc">自定義與120、90、60Hz對應的DisplayModeID，如果你不了解請不要修改，默認值-1表示程序自動匹配</string>
+<string name="rr_duration_scroll">滑動活動時長(毫秒)</string>
+<string name="rr_duration_scroll_desc">在屏幕上長距離滑動后判定為活動狀態的時長</string>
+<string name="rr_duration_tap">點按活動時長(毫秒)</string>
+<string name="rr_duration_tap_desc">輕觸或點擊屏幕后判定為活動狀態的時長</string>
+<string name="rr_gaming">游戲中刷新率</string>
+<string name="rr_gaming_desc">運行游戲時的刷新率</string>
+<string name="rr_gesture">手勢刷新率</string>
+<string name="rr_gesture_desc">觸發手勢或操作桌面時的刷新率</string>
+<string name="rr_inactive">閑置刷新率</string>
+<string name="rr_inactive_desc">未操作手機時的刷新率</string>
+<string name="rr_standby">鎖屏刷新率</string>
+<string name="rr_standby_desc">停留在鎖屏界面時的刷新率</string>
+<string name="rr_strict">嚴格模式</string>
+<string name="rr_strict_desc">重復執行刷新率設置，降低被系統覆蓋的概率</string>
+<string name="scene_adb_tip">請通過ADB執行以下代碼，激活ADB模式</string>
+<string name="scene_addin_disabled">請先在Xposed管理器中啟用“Scene”，並重啟手機</string>
+<string name="scene_addin_miss">高級設定 組件缺失</string>
+<string name="scene_addin_miss_desc">請從Scene官網下載安裝“Scene-高級設定(Scene Xposed Plug-in)”，並將其設為允許后台自啟動！</string>
+<string name="scene_addin_save_fail">保存配置失敗！</string>
+<string name="scene_addin_sync_fail">從“Scene-高級設定”組件同步Xposed設定失敗！</string>
+<string name="scene_allow_autoclick">點擊允許</string>
+<string name="scene_allow_autoclick_desc">應用請求以下權限時，自動點擊允許。* 發送通知, 獲取已安裝的應用, 獲取位置信息</string>
+<string name="scene_contract_adb">在ADB模式下，除了可以訪問Scene更多信息查看功能外，還會額外開放系統應用卸載、權限管理等功能，如果你誤操作卸載了重要的系統應用，可能需要恢復出廠設置才能開機。
+
+如您願意接受風險，使用時請務必小心謹慎，認真閱讀功能提示警示信息，不要輕易卸載不明用途的系統程序！
+
+* Scene可能會收集您的設備型號、設備廠家、設備ID信息、硬件配置參數、性能統計、溫控配置等數據，並發送至雲端用於用戶群體分析，和改進適配情況。</string>
+<string name="scene_contract_agree">接受協議</string>
+<string name="scene_contract_agree_desc">我已了解並接受協議</string>
+<string name="scene_contract_basic">* Scene可能會收集您的設備型號、設備廠家、設備ID信息、硬件配置參數、性能統計、溫控配置等數據，並發送至雲端用於用戶群體分析，和改進適配情況。</string>
+<string name="scene_contract_root">在ROOT模式下，Scene提供的所有功能都可以被訪問，其中也包括一些具有一定危險性的功能。
+例如：刪除出廠自帶應用、控制處理器性能、寫入或還原系統文件。
+
+使用過程中可能會因為操作不當或功能缺陷，導致你無法進入系統界面，或者丟失重要數據。如果你從未聽說過刷機、變磚、恢復出廠設置，並且沒有備用設備，該模式可能並不適於你！
+
+如您願意接受這些風險，使用時請務必小心謹慎，認真閱讀各個功能提示警示信息，不要輕易觸動不理解的功能按鈕開關！
+務必不要在你[用於工作]或存有[重要數據]的手機上使用ROOT模式，以免造成無法挽回的損失！
+
+* Scene可能會偶爾收集設備型號、設備廠家、設備ID信息、硬件配置參數、性能統計、溫控配置等數據，用於改進適配情況。</string>
+<string name="scene_contract_title">使用協議</string>
+<string name="scene_create_shortcut_action">com.omarea.vtools.CreateShortcut</string>
+<string name="scene_dex2at_compact">com.omarea.vtools.Dex2oatCompact</string>
+<string name="scene_disable_thermal">禁用溫控</string>
+<string name="scene_everything_compile">com.omarea.vtools.EverythingCompile</string>
+<string name="scene_init_fail">初始化失敗…</string>
+<string name="scene_install_autoclick">安裝點擊</string>
+<string name="scene_install_autoclick_desc">安裝第三方應用時，自動幫你點“下一步”和“安裝”</string>
+<string name="scene_need_notic_listing">請先授權允許Scene“通知使用權限”！</string>
+<string name="scene_need_write_sys_settings">請先授權允許Scene“修改系統設置”！</string>
+<string name="scene_permissions">現在，先校驗一些權限設置…</string>
+<string name="scene_permissions_checking">檢查並獲取必需權限…</string>
+<string name="scene_quickly_grant">快捷授權</string>
+<string name="scene_quickly_grant_desc">在應用請求顯示懸浮窗、安裝第三方應用時，彈出快捷授權窗口</string>
+<string name="scene_reset_compile">com.omarea.vtools.ResetCompile</string>
+<string name="scene_risk_agree">接受風險</string>
+<string name="scene_risk_agree_desc">我已了解並願意承擔風險</string>
+<string name="scene_skip_ad">跳過廣告</string>
+<string name="scene_skip_ad_blacklist">黑名單應用</string>
+<string name="scene_skip_ad_blacklist_desc">禁止在部分應用中查找和點擊跳過按鈕</string>
+<string name="scene_skip_ad_desc">自動點擊“跳過”按鈕，可幫你自動跳過一些開屏廣告，但會降低系統性能且存在誤點現象
+* 隻在簡體中文下使用才有較好的效果</string>
+<string name="scene_skip_ad_precise">跳過廣告+</string>
+<string name="scene_skip_ad_precise_desc">使用雲端記錄的一些按鈕數據，來點擊特殊的跳過按鈕</string>
+<string name="scene_skip_ad_warn">廣告流量是一些軟件開發者/商的重要收入來源，如果你的時間不是非常緊迫，那麼建議您瀏覽並點擊你喜歡的廣告內容^_^</string>
+<string name="scene_skip_desc">自動跳過廣告或點擊應用安裝界面的下一步</string>
+<string name="scene_speed_compile">com.omarea.vtools.SpeedCompile</string>
+<string name="scene_speed_profile_compile">com.omarea.vtools.SpeedProfileCompile</string>
+<string name="scene_working_mode">選擇工作模式</string>
+<string name="schedule_app">應用策略</string>
+<string name="schedule_app_desc">為每個應用單獨設置調度策略</string>
+<string name="schedule_auto_update">配置更新</string>
+<string name="schedule_auto_update_desc">打開SCENE時，自動更新性能調節配置</string>
+<string name="schedule_balance_desc">打開此應用時，切換到均衡模式</string>
+<string name="schedule_bypass_power">旁路供電</string>
+<string name="schedule_bypass_power_desc">在游戲中啟用旁路供電減少發熱</string>
+<string name="schedule_cloud_get_failure">獲取雲端配置失敗</string>
+<string name="schedule_core_abnormal_only">僅在超大核負載異常時生效</string>
+<string name="schedule_custom">自定義</string>
+<string name="schedule_custom_desc">通過圖形界面自己設定各個模式的參數</string>
+<string name="schedule_custom_unfinished">自定義未完成，%s調度參數尚未配置</string>
+<string name="schedule_dynamic_off">[性能調節]未開啟，Scene不會根據前台應用調節性能，僅有[啟用定位、獨立亮度]等設置會起作用。</string>
+<string name="schedule_env">環境配置</string>
+<string name="schedule_env_d_gpu_boost">禁止GPU Boost</string>
+<string name="schedule_env_d_gpu_boost_desc">禁止系統boost GPU頻率，以免在低負載狀態下拉升到較高頻率</string>
+<string name="schedule_env_d_lb">Launcher Boost</string>
+<string name="schedule_env_d_lb2">Activity Boost</string>
+<string name="schedule_env_d_lb2_desc">Activity變化時，允許短暫的突破當前檔位(模式)的頻率上限</string>
+<string name="schedule_env_d_lb_desc">檢測到應用啟動時，允許短暫的突破當前檔位(模式)的頻率上限</string>
+<string name="schedule_env_d_zram_wb">ZRAM Writeback</string>
+<string name="schedule_env_d_zram_wb_desc">在剩余內存不足時，主動將ZRAM中的數據轉移到回寫塊(如果支持)</string>
+<string name="schedule_env_desc">SCENE與系統調度的兼容處理</string>
+<string name="schedule_env_reboot_tip">本頁設定，修改后重啟手機才會生效</string>
+<string name="schedule_ep">Scene EP</string>
+<string name="schedule_ep_desc">此配置專注於追求卓越的性能和體驗</string>
+<string name="schedule_excellent">卓越性能</string>
+<string name="schedule_excellent_desc">溫控調整，適用於天璣8X00/9X00</string>
+<string name="schedule_fas">Scene LP</string>
+<string name="schedule_fas_desc">此配置偏向於延長續航和減少發熱</string>
+<string name="schedule_fas_enable">FAS</string>
+<string name="schedule_fas_enable_desc">利用FAS降低游戲功耗</string>
+<string name="schedule_fas_engine">FAS引擎</string>
+<string name="schedule_fas_engine_desc">選擇優先使用的FAS實現，默認優先系統自帶的FAS，如果效果不佳可以嘗試切換為Scene FAS</string>
+<string name="schedule_fas_rs">shadow3'fas-rs</string>
+<string name="schedule_fas_rs_desc">用戶空間FAS(Frame Aware Scheduling)實現</string>
+<string name="schedule_fas_rs_summary">訪問fas-rs(由shadow3設計)項目的Git，下載Release版本並通過Magisk刷入，重啟手機后即可在Scene裡體驗調度切換功能</string>
+<string name="schedule_fast_desc">打開此應用時，切換到極速模式</string>
+<string name="schedule_feature_cpus">核心分配</string>
+<string name="schedule_feature_cpus_desc">根據線程負載分配合適的CPU核心</string>
+<string name="schedule_feature_details">查看詳情</string>
+<string name="schedule_feature_fps">刷新率管理</string>
+<string name="schedule_feature_fps_desc">讓SCENE控制屏幕刷新率</string>
+<string name="schedule_features">可選特性</string>
+<string name="schedule_global_desc">此應用的性能調節模式跟隨“全局默認”的設置</string>
+<string name="schedule_hp">Scene HP</string>
+<string name="schedule_hp_desc">此配置提供更均衡的性能和能耗表現</string>
+<string name="schedule_keep">保持狀態</string>
+<string name="schedule_keep_desc">打開應用時保持當前性能調節狀態</string>
+<string name="schedule_limiter">輔助調速器</string>
+<string name="schedule_limiter_desc">啟用SCENE提供的輔助調速器降低功耗</string>
+<string name="schedule_miui_thermal">MIUI溫控</string>
+<string name="schedule_more">更多選項</string>
+<string name="schedule_online">Scene</string>
+<string name="schedule_pedestal">底座模式</string>
+<string name="schedule_perf_desc">打開此應用時，切換到性能模式</string>
+<string name="schedule_powersave_desc">打開此應用時，切換到省電模式</string>
+<string name="schedule_remove_outside">你已安裝其它作者提供的性能調節配置(位於/data/powercfg.sh)，更改配置源需先將其刪除。現在要刪除它並重啟手機嗎？</string>
+<string name="schedule_restore_automatic">配置已禁用。但是，在重啟設備之前，它依然生效！</string>
+<string name="schedule_scheduling">性能</string>
+<string name="schedule_screen_on">全局默認</string>
+<string name="schedule_source_hot">高分(第三方)</string>
+<string name="schedule_source_others">其它</string>
+<string name="schedule_source_scene">來自SCENE</string>
+<string name="schedule_title">選擇性能調節策略</string>
+<string name="schedule_unfinished">在安裝有效的性能調節配置之前，你不能開啟本功能~</string>
+<string name="schedule_unofficial">你正在使用其它作者提供的性能調節配置~</string>
+<string name="schedule_unsupported">該方案未適配本設備~</string>
+<string name="schedule_uperf">yc9559'Uperf</string>
+<string name="schedule_uperf_desc">Yc9559設計的Uperf，適用於驍龍888和更舊的soc</string>
+<string name="schedule_uperf_gt">yinwanxi'UperfGT</string>
+<string name="schedule_uperf_gt_desc">Uperf衍生版本，更加強調游戲性能</string>
+<string name="schedule_uperf_gt_summary">訪問Uperf(由吟惋兮為提升游戲性能改造)項目的Git，下載Release版本並通過Magisk刷入，重啟手機后即可在Scene裡體驗調度切換功能~</string>
+<string name="schedule_uperf_summary">訪問Uperf(由yc9559設計)項目的Git，下載Release版本並通過Magisk刷入，重啟手機后即可在Scene裡體驗調度切換功能~</string>
+<string name="scheduler_fas_clusters">頻率控制目標</string>
+<string name="scheduler_fas_clusters_all">全部</string>
+<string name="scheduler_fas_clusters_desc">使用FAS限制哪些cluster的頻率</string>
+<string name="scheduler_fas_clusters_m">中核/大核</string>
+<string name="scheduler_fas_clusters_p">僅大核</string>
+<string name="scheduler_fas_conservative">保守升頻</string>
+<string name="scheduler_fas_conservative_desc">在未發生連續卡頓前不提升頻率，最大程度壓制頻率</string>
+<string name="scheduler_fas_cycles">Perf Event</string>
+<string name="scheduler_fas_cycles_desc">基於Perf Event的數據計算目標CPU頻率</string>
+<string name="scheduler_fas_fast_down">快速降頻</string>
+<string name="scheduler_fas_fast_down_desc">當幀間隔時間回到正常范圍內時，更快的降低頻率</string>
+<string name="scheduler_fas_fps_offset">幀率微調(‰)</string>
+<string name="scheduler_fas_fps_offset_desc">千分比微調目標幀率，-50表示目標幀率-5%</string>
+<string name="scheduler_fas_governor_l">小核調速器</string>
+<string name="scheduler_fas_governor_l_desc">FAS/FEAS工作期間，小核使用的頻率調速器</string>
+<string name="scheduler_fas_governor_m">中核調速器</string>
+<string name="scheduler_fas_governor_m_desc">FAS/FEAS工作期間，中核使用的頻率調速器</string>
+<string name="scheduler_fas_governor_p">大核調速器</string>
+<string name="scheduler_fas_governor_p_desc">FAS/FEAS工作期間，大核使用的頻率調速器。如果幀率表現不佳，可以嘗試切換為performance</string>
+<string name="scheduler_fas_margin_offset">余量偏移(MHz)</string>
+<string name="scheduler_fas_margin_offset_desc">FAS Lite默認余量為240~300MHz(按處理器區分)，微調余量可改變能耗或流暢度</string>
+<string name="scheduler_fas_rt_adj">實時修正</string>
+<string name="scheduler_fas_rt_adj_delay">平均延遲</string>
+<string name="scheduler_fas_rt_adj_desc">允許FAS引擎根據幀率方差，動態調整幀間隔(時間)平滑算法</string>
+<string name="scheduler_fas_rt_adj_off">禁用</string>
+<string name="script_losted">腳本資源丟失
+</string>
+<string name="search_menu_title">搜索</string>
+<string name="select_all">全選</string>
+<string name="settings_daemon_alive">無障礙Daemon</string>
+<string name="settings_daemon_alive_desc">使用Daemon進程保持輔助服務存活，可能增加耗電</string>
+<string name="settings_daemon_auto">Daemon中的監視器</string>
+<string name="settings_daemon_auto_desc">啟用scene-daemon中的窗口監視器</string>
+<string name="settings_debug_layer">調試窗口</string>
+<string name="settings_debug_layer_desc">顯示Scene判定前台應用過程的日志</string>
+<string name="settings_download">恢復設置</string>
+<string name="settings_download_desc">從雲端恢復以下設置(與本機配置合並)
+ 應用偏見-凍結列表和設置； 應用策略-應用性能檔位； 應用策略-應用刷新率； 應用策略-啟用定位的應用列表； 應用策略-FAS-黑/白名單； SWAP設置； SCENE個性化設置； 卸載的應用列表； 自動點擊黑名單； 應用/游戲分類設置；</string>
+<string name="settings_ft_monitor">Frametime監視器</string>
+<string name="settings_ft_monitor_desc">啟動幀率記錄時，在屏幕上時顯示Frametime統計圖</string>
+<string name="settings_keep_alive">前台服務</string>
+<string name="settings_keep_alive_desc">利用ForegroundService，讓Scene盡量避免被休眠</string>
+<string name="settings_language_package">語言包</string>
+<string name="settings_language_package_desc">從外部存儲加載strings.xml</string>
+<string name="settings_language_package_export">導出strings.xml</string>
+<string name="settings_layer_keep">監視器保持開啟</string>
+<string name="settings_layer_keep_desc">息屏時監視器懸浮窗保持開啟，可能增加耗電</string>
+<string name="settings_next_release">下個發行版</string>
+<string name="settings_next_release_desc">關注下個發行版更新(SCENE9)</string>
+<string name="settings_precision_monitor">精准監視器</string>
+<string name="settings_precision_monitor_desc">提高監視器懸浮窗刷新速率</string>
+<string name="settings_simple_notification">簡化通知</string>
+<string name="settings_simple_notification_desc">性能調節通知使用系統自帶的通知樣式</string>
+<string name="settings_theme">主題色調</string>
+<string name="settings_upload">備份設置</string>
+<string name="settings_upload_desc">以下設置會被上傳(覆蓋雲端數據)
+ 應用偏見-凍結列表和設置； 應用策略-應用性能檔位； 應用策略-應用刷新率； 應用策略-啟用定位的應用列表； 應用策略-FAS-黑/白名單； SWAP設置； SCENE個性化設置； 卸載的應用列表； 自動點擊黑名單； 應用/游戲分類設置；</string>
+<string name="share_link">你也來試試Scene吧，我覺得還不錯，下載地址：
+ http://vtools.omarea.com/</string>
+<string name="shell_executor">腳本執行</string>
+<string name="shortcut_create">添加快捷方式</string>
+<string name="shortcut_create_desc">你希望將“%s”添加到桌面，方便快速使用嗎？</string>
+<string name="shortcut_create_fail">快捷方式創建失敗</string>
+<string name="shortcut_create_success">已發送創建快捷方式申請</string>
+<string name="shortcut_disabled">暫不可用</string>
+<string name="shortcut_p1">省電模式</string>
+<string name="shortcut_p1_long">性能配置-省電</string>
+<string name="shortcut_p2">均衡模式</string>
+<string name="shortcut_p2_long">性能配置-均衡</string>
+<string name="shortcut_p3">性能模式</string>
+<string name="shortcut_p3_long">性能配置-性能</string>
+<string name="shortcut_p4">極速模式</string>
+<string name="shortcut_p4_long">性能配置-極速</string>
+<string name="size">大小</string>
+<string name="sorry">抱歉</string>
+<string name="source_author">配置源/作者：</string>
+<string name="source_custom">自定義</string>
+<string name="source_import">文件導入</string>
+<string name="source_online">Scene</string>
+<string name="source_outside">外部來源</string>
+<string name="source_reboot">在變更配置源后，建議重啟手機，是否現在就重啟？</string>
+<string name="source_undefined">未定義</string>
+<string name="source_unknown">未知</string>
+<string name="source_uperf">外部來源(Uperf)</string>
+<string name="start_app_fail">啟動應用失敗！</string>
+<string name="status_bar_notification_info_overflow">999+</string>
+<string name="swap_activate">激活SWAP</string>
+<string name="swap_activate_step2">很好，現在來設置一些細節的參數</string>
+<string name="swap_auto_start">開機自啟(要允許Scene自啟動)</string>
+<string name="swap_auto_start_desc">注意：你需要允許Scene自啟動，下次開機才會生效！</string>
+<string name="swap_auto_start_short">開機自啟(要允許Scene自啟動)</string>
+<string name="swap_auto_start_short_desc">手機重新啟動后，自動應用當前設置
+(需要允許Scene自啟動)</string>
+<string name="swap_create">創建</string>
+<string name="swap_create_desc">現在，拖動滑塊調整Swapfile大小</string>
+<string name="swap_create_dialog">創建Swapfile</string>
+<string name="swap_create_in_data">在/data下創建</string>
+<string name="swap_create_in_data_desc">默認位置為/data/swapfile，不可更改</string>
+<string name="swap_current_state">當前狀態：</string>
+<string name="swap_delete">刪除</string>
+<string name="swap_enabled_swaps">啟用的Swap</string>
+<string name="swap_io">SWAP IO</string>
+<string name="swap_lmk_restart">需要重啟手機才會恢復默認的LMK參數！</string>
+<string name="swap_memory_info">Memory Info</string>
+<string name="swap_module_activated">已激活</string>
+<string name="swap_module_inactive">未激活</string>
+<string name="swap_module_install_desc">模塊下載后，請自行在Magisk Manager中刷入,並重啟手機！</string>
+<string name="swap_module_updated">有可用更新/下載</string>
+<string name="swap_off">關閉Swapfile</string>
+<string name="swap_off_delete">刪除Swapfile</string>
+<string name="swap_off_delete_desc">關閉Swapfile后，刪除/data/swapfile文件</string>
+<string name="swap_off_slow_warn">說明：舊的Android手機回收SWAP(包括ZRAM)的速度非常慢(1~5MB/s)，建議清空后台以減少SWAP佔用，節省回收時間</string>
+<string name="swap_on_close">正在關閉SWAP，這可能很慢</string>
+<string name="swap_outside_effect1">1.提高手機重啟后還原ZRAM、Swapfile設置的速度</string>
+<string name="swap_outside_effect2">2.根據設備RAM容量調整LMK參數，加強后台留存能力</string>
+<string name="swap_outside_effect3">3.調整VM參數，提高ZRAM、Swapfile使用積極性</string>
+<string name="swap_outside_module">外部附加(Magisk)模塊</string>
+<string name="swap_outside_module_desc">您已安裝Magisk框架，建議使用附加模塊最新版本增強SWAP控制的可靠性，附加主要作用如下：</string>
+<string name="swap_read">從SWAP讀出：</string>
+<string name="swap_reboot">確認重啟手機？</string>
+<string name="swap_reboot_reason">Swap被大量使用(%sMB)，短時間內很難完成回收。
+因此需要重啟手機來完成此操作，請確保你的重要數據都已保存！！！</string>
+<string name="swap_recycling_estimate">大約還需</string>
+<string name="swap_recycling_swapfile">回收Swapfile</string>
+<string name="swap_recycling_waiting">請耐心等待~</string>
+<string name="swap_recycling_zram">回收 ZRAM</string>
+<string name="swap_restart_restore">重啟后還原系統設定</string>
+<string name="swap_restart_retain">重啟后保持當前設置</string>
+<string name="swap_shell_01">所有回環設備都已被佔用，無法完成挂載！</string>
+<string name="swap_size_require">請先設定SWAP大小！</string>
+<string name="swap_start">啟動</string>
+<string name="swap_state_created">未啟動</string>
+<string name="swap_state_undefined">未創建</string>
+<string name="swap_state_using">使用中</string>
+<string name="swap_stop">關閉</string>
+<string name="swap_swap">Swapfile</string>
+<string name="swap_swap_desc">說明： Swapfile屬於磁盤交換技術，速度受UFS性能影響。請勿在小容量或空間不足的手機上使用此功能，以防閃存老化過快！</string>
+<string name="swap_swap_preferred">優先於ZRAM使用</string>
+<string name="swap_swapfile_first">優先於ZRAM使用</string>
+<string name="swap_swapfile_first_desc">Swapfile效率遠不及ZRAM，不推薦使用此優先級</string>
+<string name="swap_swapfile_speed">Swapfile創建完畢，耗時%ds，平均寫入速度：%dMB/s</string>
+<string name="swap_swappiness">Swappiness</string>
+<string name="swap_swappiness_desc">說明：
+數值越高會越積極的使用SWAP，此設置對流暢度的影響難以感知，酌情調整即可~</string>
+<string name="swap_use_loop">挂載為回環設備</string>
+<string name="swap_use_loop_desc">如果開啟Swapfile后出現死機情況，可嘗試開啟此選項。正常情況下不需要</string>
+<string name="swap_vm">VM參數</string>
+<string name="swap_vm_desc">這是一些關於SWAP積極性、內存水位線的調整</string>
+<string name="swap_vmstat">VM Stat</string>
+<string name="swap_write">寫入到SWAP：</string>
+<string name="swap_zram">ZRAM</string>
+<string name="swap_zram_adjustment">調整</string>
+<string name="swap_zram_comp_algorithm_wran">更改未生效</string>
+<string name="swap_zram_comp_algorithm_wran_desc">ZRAM正在使用中，現在無法更改壓縮算法。
+
+如需讓設置生效，請點擊下方的“調整”按鈕</string>
+<string name="swap_zram_comp_options">壓縮算法</string>
+<string name="swap_zram_compact_algorithm">壓縮算法</string>
+<string name="swap_zram_concurrent">與ZRAM同時使用</string>
+<string name="swap_zram_concurrent_desc">使ZRAM和Swapfile的使用順序相同，數據交換過程中等量使用</string>
+<string name="swap_zram_desc">說明： ZRAM是SWAP的一種實現。可用內存變得不足時，會對內存中的部分數據進行壓縮。但CPU會因此變得繁忙~</string>
+<string name="swap_zram_equitable">與ZRAM同時使用</string>
+<string name="swap_zram_extm">拓展內存
+回寫塊：%s
+已使用：%dMB</string>
+<string name="swap_zram_first">在ZRAM之后使用</string>
+<string name="swap_zram_first_desc">ZRAM用盡之后，再使用Swapfile。推薦使用此優先級</string>
+<string name="swap_zram_preferred">用完ZRAM再使用</string>
+<string name="swap_zram_size">調整ZRAM</string>
+<string name="swap_zram_size_desc">現在，拖動滑塊調整ZRAM大小</string>
+<string name="swap_zram_stat">ZRAM 狀態</string>
+<string name="swap_zram_stat_desc">ZRAM的壓縮率通常在20~45%之間</string>
+<string name="swap_zram_stat_format">數據壓縮算法：%s
+原始數據大小：%s
+壓縮后的大小：%s
+物理內存佔用：%s
+最高內存佔用：%s
+內存佔用限制：%s
+壓縮率　　　：%s</string>
+<string name="swap_zram_stat_format2">數據壓縮算法：%s
+原始數據大小：%s
+壓縮后的大小：%s
+物理內存佔用：%s
+內存佔用限制：%s
+壓縮率　　　：%s</string>
+<string name="swap_zram_too_small">如果ZRAM太小，設備性能會下降且功耗上升</string>
+<string name="swap_zram_writback_stat">ZRAM回寫
+回寫塊：%s
+已回寫：%dMB
+總讀取：%dMB
+總回寫：%dMB</string>
+<string name="switch_root_cmd">其它 [su]</string>
+<string name="sync">設置備份</string>
+<string name="system">系統</string>
+<string name="system_scene_battery_left">電量低於</string>
+<string name="system_scene_battery_right">電量高於</string>
+<string name="system_scene_delete">刪除該任務？</string>
+<string name="system_scene_next_task">下一個任務</string>
+<string name="system_scene_resume_charge">恢復充電</string>
+<string name="system_scene_stop_charge">停止充電</string>
+<string name="system_scene_task_canceled">任務已取消</string>
+<string name="system_scene_timing_task">我的定時任務</string>
+<string name="system_scene_trigger">我的觸發器</string>
+<string name="task_actions">執行操作</string>
+<string name="task_choose_actions">選擇要執行的動作</string>
+<string name="task_choose_events">選擇觸發事件</string>
+<string name="task_command_content">在此粘貼/輸入要執行的sh腳本</string>
+<string name="task_command_content_empty">腳本內容不能為空哦！</string>
+<string name="task_command_name">名稱（不可重復，不可修改）</string>
+<string name="task_command_name_empty">先輸入一個名稱吧！</string>
+<string name="task_command_name_exist">已存在同名命令，內容為：</string>
+<string name="task_command_name_replace">要覆蓋已存在的同名命令？</string>
+<string name="task_command_save_fail">保存失敗！</string>
+<string name="task_command_save_ok">添加成功！</string>
+<string name="task_enable">啟用任務</string>
+<string name="task_event">觸發事件</string>
+<string name="task_event_battery_low">電量不足</string>
+<string name="task_event_boot">開機完成</string>
+<string name="task_event_charging">連接充電器</string>
+<string name="task_event_discharging">斷開充電器</string>
+<string name="task_event_screen_off">屏幕關閉</string>
+<string name="task_event_screen_on">屏幕點亮</string>
+<string name="task_everyday">每天</string>
+<string name="task_later">后運行</string>
+<string name="task_none_actions">你還沒創建自定義命令</string>
+<string name="task_once">一次</string>
+<string name="task_period">時段限制</string>
+<string name="task_timing">執行時機</string>
+<string name="tip">提示</string>
+<string name="title_activity_file_selector">請選擇文件</string>
+<string name="title_activity_folder_selector">請長按選擇目錄</string>
+<string name="title_activity_freeze">應用偏見</string>
+<string name="title_activity_online">Scene-Online</string>
+<string name="title_activity_shortcut">快捷啟動</string>
+<string name="type">類型</string>
+<string name="unknown_mode">未知模式</string>
+<string name="uperf_auto">Uperf'Auto</string>
+<string name="upload">上傳</string>
+<string name="used">已用</string>
+<string name="user_action_signin">登錄</string>
+<string name="user_action_signup">注冊</string>
+<string name="user_activate_sync">同步激活狀態</string>
+<string name="user_activation_complete">激活成功，建議重啟Scene！</string>
+<string name="user_change_device">更換設備</string>
+<string name="user_code_dialog_desc">支付完成需12~24小時后，轉賬單號/訂單號才可用於激活，在此之前提示無效屬於正常現象！</string>
+<string name="user_code_dialog_title">驗証/使用兌換碼</string>
+<string name="user_code_input">訂單號 / 兌換碼(卡密)</string>
+<string name="user_code_purchase">付費購買</string>
+<string name="user_current">(當前)</string>
+<string name="user_current_account">當前賬號</string>
+<string name="user_device_remove">請選擇你要移除的設備</string>
+<string name="user_devices">我的設備</string>
+<string name="user_email_input">你的賬號(郵箱)</string>
+<string name="user_exchange_exhaust">兌換次數耗盡</string>
+<string name="user_exchange_exhaust_desc">此兌換碼可使用%d次。已使用%d，用於激活了以下設備：</string>
+<string name="user_exchange_exhaust_desc2">兌換碼使用次數已用完，無法激活更多設備。</string>
+<string name="user_exchange_fail">兌換失敗</string>
+<string name="user_exchange_invalid_desc">你可能輸入了無效的兌換碼，或該訂單尚未記錄！</string>
+<string name="user_exchange_now">立即兌換</string>
+<string name="user_exchange_ok">兌換成功</string>
+<string name="user_exchange_ok_error">兌換碼使用成功，但激活設備時出現錯誤，以下是詳細錯誤信息，可以截圖聯系開發者(Email:helloklf@outlook.com)</string>
+<string name="user_exchange_ok_old">這是你以前激活過的設備，本次激活不消耗兌換碼有效次數。</string>
+<string name="user_exchange_ok_old_error">這是你曾經激活過的設備，本次兌換不消耗兌換碼有效次數。但激活設備時出現錯誤，以下是詳細錯誤信息，可以截圖聯系開發者(Email:helloklf@outlook.com)</string>
+<string name="user_exchange_unknown_error">未知錯誤:</string>
+<string name="user_exchange_unknown_error2">奇怪的錯誤出現了，以下是錯誤詳情:</string>
+<string name="user_exchange_valid">兌換碼有效</string>
+<string name="user_free">免費版</string>
+<string name="user_log_out">退出登錄</string>
+<string name="user_log_out_ok">退出登陸成功</string>
+<string name="user_login_failure">登錄失敗，未知錯誤</string>
+<string name="user_login_ok">登陸成功</string>
+<string name="user_not_response">接口未響應，請檢查網絡連接或稍后再試！</string>
+<string name="user_other_account">更換賬號</string>
+<string name="user_password_verify">密碼校驗</string>
+<string name="user_password_verify_desc">為確保您是當前賬號持有者，請輸入登錄密碼</string>
+<string name="user_pay_completed">我已支付</string>
+<string name="user_pay_go">去支付</string>
+<string name="user_please_uid">請輸入用戶名/密碼</string>
+<string name="user_points">積分：</string>
+<string name="user_points_detail">積分明細：</string>
+<string name="user_points_failure">獲取賬戶積分記錄失敗</string>
+<string name="user_points_free">剩余積分：</string>
+<string name="user_points_total">累計積分：</string>
+<string name="user_points_unknown">積分: --</string>
+<string name="user_points_used">消耗積分：</string>
+<string name="user_pwd_input">密碼</string>
+<string name="user_recommended">討論、分享</string>
+<string name="user_register_login">注冊/登錄</string>
+<string name="user_register_login_desc">如果輸入的賬號不存在，將會自動創建。在多個設備上登錄同一賬號時，賬號積分也會共享。</string>
+<string name="user_reset_password">忘了賬號/密碼？</string>
+<string name="user_reset_password_input">訂單號 / 兌換碼(卡密)</string>
+<string name="user_reset_password_input2">新的密碼</string>
+<string name="user_seek_help">聯系/求助(Email)</string>
+<string name="user_sn_null">未獲得設備SN</string>
+<string name="user_sn_root">未獲取到設備SN(主板ID或CPUID)，無法完成激活。需要先切換到ROOT模式！</string>
+<string name="user_sn_root2">未獲取到設備SN(主板ID或CPUID)，無法完成激活。需要先切換到ROOT模式！
+注意：如果你無需使用ROOT模式下的功能，是不需要購買專業版的！</string>
+<string name="user_talking_share">討論、分享</string>
+<string name="user_uid_input">郵箱</string>
+<string name="user_unbind_failure">設備解綁失敗</string>
+<string name="user_unregistered">未登錄賬號</string>
+<string name="user_upgrade">升級徽標</string>
+<string name="user_upgrade_confirm">我同意更改我的激活狀態和賬單歷史</string>
+<string name="user_upgrade_desc">如果當前設備已經消耗了16積分，可以免費升級為永久許可証，升級后此設備將不再消耗積分。但這會改變積分消耗記錄，並且不可撤銷。也可以選擇一次性扣滿16分，使本機立刻獲得永久許可，但不建議這麼做。</string>
+<string name="user_upgrade_force">自動補扣</string>
+<string name="user_upgrade_force_desc">一次性扣滿16分，立刻獲得金標</string>
+<string name="user_use_code">使用兌換碼</string>
+<string name="user_use_purchase">購買專業版</string>
+<string name="user_verify">驗証</string>
+<string name="ushortcut_nsupported">該功能不支持添加快捷方式</string>
+<string name="wallpaper_rw_permission">需要“讀寫本地存儲”的權限才能使用系統壁紙作為軟件背景</string>
+<string name="warn">警告</string>
+<string name="watermark_scale_factor">watermark_scale_factor</string>
+<string name="watermark_scale_factor_desc">數值范圍為0~1000，其中1000表示10%，表示內存水位線low/min/high三個數值之間各相差(物理RAM容量的)10%。
+
+例如(我的手機)：
+pageSize=4KB
+managed=1951743(pages)
+min_free_kbytes=10900(KB)
+watermark_scale_factor=500
+
+此時min值為
+10900(KB)/4(PageSize)=2725(pages)
+low值大約是
+1951743*5%+2725≈100312(pages)
+high值大約是
+1951743*10%+2725≈197899(pages)
+注：最終的low、high值，可能受extra_free_kbytes影響而偏大
+
+這個例子中，
+min=2725=10MB
+low=100312≈392MB
+high=197899≈773MB
+
+意味著，內存低於392M便會開始回收內存，直到可用內存高於773MB~</string>
+<string name="zram_resizing">正在調整，請耐心等候…</string>
+<string-array name="appops_filter">
+  <item>全部</item>
+  <item>允許</item>
+  <item>前台允許</item>
+  <item>忽略</item>
+  <item>拒絕</item>
+</string-array>
+<string-array name="battery_exec_options">
+  <item>降低速度</item>
+  <item>加速充電</item>
+  <item>往死裡充</item>
+</string-array>
+<string-array name="default_powercfg_mode_options">
+  <item>省電模式</item>
+  <item>均衡模式</item>
+  <item>性能模式</item>
+  <item>極速模式</item>
+</string-array>
+<string-array name="detail_categories">
+  <item>應用</item>
+  <item>游戲</item>
+</string-array>
+<string-array name="modules_source_filter">
+  <item>所有來源</item>
+  <item>官方上傳</item>
+  <item>用戶分享</item>
+  <item>Magisk的倉庫</item>
+</string-array>
+<string-array name="powercfg_apptype_filter">
+  <item>用戶</item>
+  <item>系統</item>
+  <item>全部</item>
+</string-array>
+<string-array name="powercfg_modes_filter">
+  <item>All</item>
+  <item>省電模式</item>
+  <item>均衡模式</item>
+  <item>性能模式</item>
+  <item>極速模式</item>
+  <item>全局默認</item>
+  <item>保持狀態</item>
+</string-array>
+<string-array name="preloaded_fonts">
+  <item>res/font/aldrich.xml</item>
+</string-array>
+<string-array name="process_filter">
+  <item>安卓應用</item>
+  <item>其它進程</item>
+  <item>所有進程</item>
+</string-array>
+<string-array name="process_sort_modes">
+  <item>按CPU</item>
+  <item>按RES</item>
+  <item>按PID</item>
+  <item>不排序</item>
+</string-array>
+<string-array name="sleep_powercfg_mode_options">
+  <item>省電模式</item>
+  <item>均衡模式</item>
+  <item>性能模式</item>
+  <item>保持狀態</item>
+</string-array>
+<string-array name="su_alias_name">
+  <item>Magisk</item>
+  <item>KernelSU/APatch</item>
+  <item>SuperSU</item>
+  <item>timesu</item>
+  <item>suu</item>
+</string-array>
+</resources>
