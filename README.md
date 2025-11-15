@@ -36,15 +36,15 @@ A computer is also mandatory for rooting or unlocking the bootloader; please get
 
 This guide will use Magisk patching as an example, for other rooting methods like KernelSU or Apatch, please follow their respective guide.
 
-1. Download the official fastboot ROM you want to use from [xiaomirom](https://xiaomirom.com/en/) or other simillar firmware websites.
+1. Download the appropriate official fastboot ROM corresponding to your device model from [xiaomirom](https://xiaomirom.com/en/) or other simillar firmware websites. Make sure you trust the website to avoid downloading malicious firmware!
 2. Extract it twice until you see the contents.
-3. Copy `boot.img` and move it to your device.
+3. Copy `boot.img` and copy it to your device.
 4. Download the APK of [Magisk](https://github.com/topjohnwu/Magisk/releases/) and patch the image, it should look like `magisk_patched-00000_XXXXX.img`.
-5. Move it back to your computer.
-5. Reboot your device to bootloader.
-6. Patch the image using the command `fastboot flash boot magisk_patched-00000_XXXXX.img`, this will flash the patched boot image into boot sector.
-7. Reboot.
-8. Now your device is rooted!
+5. Move the image back to your computer.
+5. Reboot your device to bootloader using any methods or with the command `adb reboot bootloader` in adb.
+6. Flash the image you just patched using the command `fastboot flash boot magisk_patched-00000_XXXXX.img`, this will flash the boot image into boot sector.
+7. Reboot with the command `fastboot reboot`.
+8. Now your device should be rooted.
 9. For more detailed guide, please follow the official [documentation](https://topjohnwu.github.io/Magisk/).
 ---
 # Disclaimer
